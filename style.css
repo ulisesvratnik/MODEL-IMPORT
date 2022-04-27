@@ -1,0 +1,549 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Akshar', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+h1 h2 h3 h4 {
+    font-family: 'Akshar', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Playfair Display', serif;
+}
+
+.header {
+    background-color: #0d2033;
+}
+
+
+.logo {
+    border-radius: 8px;
+}
+
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+}
+
+.imagen-portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main>.container {
+    padding: 30px 0;
+}
+
+h5 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.ptachado {
+    text-decoration: line-through;
+    padding-right: 10px;
+    margin-left: 100px;
+    color: black;
+    font-size: 20px;
+}
+
+.pnotachado {
+    color: black;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    padding: .8em 0 .4em;
+    color: black;
+}
+
+.gallery {
+    padding-bottom: 3em;
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "img1 img1 img2 img3"
+        "img1 img1 img4 img4"
+        "img5 img5 img6 img7"
+        "img5 img5 img8 img8";
+    gap: .8em;
+    grid-auto-rows: 250px;
+}
+
+.gallery__picture {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.gallery__picture::before {
+    content: "TUKI";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    transition: transform .4s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.gallery__picture:hover::before {
+    transform: scale(1) rotate(360deg);
+
+}
+
+.gallery__picture--g1 {
+    grid-area: img1;
+}
+
+.gallery__picture--g2 {
+    grid-area: img2;
+}
+
+.gallery__picture--g3 {
+    grid-area: img3;
+}
+
+.gallery__picture--g4 {
+    grid-area: img4;
+}
+
+.gallery__picture--g5 {
+    grid-area: img5;
+}
+
+.gallery__picture--g6 {
+    grid-area: img6;
+}
+
+.gallery__picture--g7 {
+    grid-area: img7;
+}
+
+.gallery__picture--g8 {
+    grid-area: img8;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+        padding: .8em 0 .4em;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "img1 img1"
+            "img1 img1"
+            "img2 img3"
+            "img4 img4"
+            "img4 img4"
+            "img5 img5"
+            "img6 img6"
+            "img7 img7"
+            "img8 img8"
+            "img8 img8";
+    }
+
+    .gallery__picture::before {
+        font-size: 1rem;
+    }
+}
+
+/* IMAGENES PORTADA */
+
+.Categorias-productos {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.Categorias-productos img {
+     width: 100%;
+    height: 100%; 
+}
+
+/* FOOTER */
+
+
+.pie-pagina {
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+
+.pie-pagina .grupo1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+
+}
+
+
+
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 858px) {
+
+
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+    }
+
+
+}
+
+
+
+/* PREGUNTAS FRECUENTES/COMO COMPRAR */
+
+.main-preguntas {
+    padding: 15px;
+    margin: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.olproductos {
+    max-width: 100%;
+    flex: 100%;
+    text-align: start;
+    padding: 5px;
+}
+
+.texto-productos {
+    padding: 5px;
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.texto-organizadoproductos {
+    display: block;
+    list-style-type: 1em;
+    margin-block-start: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.texto-organizadoli {
+    display: list-item;
+}
+
+.tituloh2 {
+    height: 100%;
+    width: 100%;
+    text-align: start;
+    max-width: 100%;
+    padding: 10px;
+    margin: 20px;
+}
+
+.tituloh3 {
+    height: 50px;
+    text-align: start;
+    max-width: 83%;
+    flex: 83%;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* ARTICULOS */
+
+main {
+    background: #f0f0f0;
+    padding: 40px 20px;
+}
+
+article {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px;
+    background: #fff;
+}
+
+article p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300px;
+}
+
+.formulario{
+    background-image: url(/imagenes/img3.jpg);
+}
+
+/* OPINIONES */
+
+.tituloo {
+    text-align: center;
+    font-size: 42px;
+    width: 100%;
+}
+
+.titulo3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.mel {
+    border: 1px solid #9B9B9B;
+    margin: 20px;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+
+.estrellas {
+    height: 15px;
+    width: 15px;
+    text-align: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eli {
+    border: 1px solid #9B9B9B;
+    margin: 20px;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+.jose {
+    border: 1px solid #9B9B9B;
+    margin: 20px;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+/* DESTACADOS */
+.tituloo {
+    text-align: center;
+    font-size: 42px;
+    width: 100%;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-auto-rows: minmax(100px, auto);
+    background-color: white;
+    
+}
+
+.y12 {
+    margin: 20px;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+.titulo3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.imgdestacados {
+    height: 350px;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+
+}
+
+
+.t50 {
+    margin: 20px;
+    padding: 20px;
+    letter-spacing: 1px;
+
+}
+
+.y12pro {
+    margin: 20px;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+.containerr {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-destacados {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+}
+
+.tituloh1 {
+    margin: 100px;
+    height: auto;
+    text-align: center;
+    font-size: 40px;
+    padding: 100px;
+    color: black;
+}
+
+
+.containerr {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-destacados {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+}
+
+.caja img {
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+
+}
+
+.caja {
+    margin: 30px;
+}
+
+
+.caja p {
+    text-align: center;
+    font-size: 24px;
+    color: black;
+
+}
+
+@media (max-width: 858px) {
+
+
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+    }
+
+    .wrapper{
+        display: block;
+    }
+
+}
