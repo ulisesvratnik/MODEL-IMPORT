@@ -302,10 +302,10 @@ h5 {
 /* PREGUNTAS FRECUENTES/COMO COMPRAR */
 
 .main-preguntas {
-    padding: 15px;
-    margin: 5px;
     height: 100%;
     width: 100%;
+    background: #f0f0f0;
+    padding: 40px 20px;
 }
 
 .olproductos {
@@ -531,7 +531,7 @@ article p {
 }
 
 .form-group{
-    background-image: url(/imagenes/img3.jpg);
+    background-image: url(imagenes/img3.jpg);
 }
 
 @media (max-width: 858px) {
