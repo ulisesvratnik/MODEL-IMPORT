@@ -13,6 +13,8 @@ h1 h2 h3 h4 {
     font-family: 'Playfair Display', serif;
 }
 
+/* BARRA DE NAVEGACION */
+
 .header {
     background-color: #0d2033;
 }
@@ -71,6 +73,8 @@ h5 {
     margin-right: 10px;
     font-size: 20px;
 }
+
+/* GALERIA DE IMAGENES */
 
 .title {
     text-align: center;
@@ -189,15 +193,15 @@ h5 {
 /* IMAGENES PORTADA */
 
 .Categorias-productos {
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .Categorias-productos img {
-     width: 100%;
-    height: 100%; 
+    width: 100%;
+    height: 100%;
 }
 
 /* FOOTER */
@@ -271,8 +275,6 @@ h5 {
 
 }
 
-
-
 @media (max-width: 952px) {
     .enlace {
         padding-left: 20px;
@@ -296,8 +298,6 @@ h5 {
 
 
 }
-
-
 
 /* PREGUNTAS FRECUENTES/COMO COMPRAR */
 
@@ -354,7 +354,6 @@ h5 {
 }
 
 
-
 /* OPINIONES */
 
 .tituloo {
@@ -401,6 +400,7 @@ h5 {
 }
 
 /* DESTACADOS */
+
 .tituloo {
     text-align: center;
     font-size: 42px;
@@ -413,7 +413,7 @@ h5 {
     grid-template-columns: repeat(3, 2fr);
     grid-auto-rows: minmax(100px, auto);
     background-color: white;
-    
+
 }
 
 .y12 {
@@ -530,7 +530,7 @@ article p {
     font-weight: 300px;
 }
 
-.form-group{
+.form-group {
     background-image: url(imagenes/img3.jpg);
 }
 
@@ -544,9 +544,8 @@ article p {
         padding: 35px 0;
     }
 
-    .wrapper{
+    .wrapper {
         display: block;
     }
 
 }
-
