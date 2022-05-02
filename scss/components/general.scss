@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+/* ARTICULOS */
+
+body {
+
+     font-family: 'Akshar', sans-serif;
+    font-family: 'Playfair Display', serif; 
+}
+
+h1 h2 h3 h4 {
+    font-family: 'Akshar', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Playfair Display', serif;
+}
+
+.main {
+    background: #f0f0f0;
+    padding: 40px 20px;
+}
+
+article {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px;
+    background: #fff;
+}
+
+article p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300px;
+}
+
