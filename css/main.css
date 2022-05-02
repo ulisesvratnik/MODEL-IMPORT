@@ -35,6 +35,8 @@ article p {
 /* BARRA DE NAVEGACION */
 .logo {
   border-radius: 8px;
+  width: 80px;
+  height: 40px;
 }
 
 .header {
@@ -49,6 +51,10 @@ article p {
 
 .navbar-light .navbar-nav .nav-link {
   color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+  color: aqua;
 }
 
 .navbar-light .navbar-nav .nav-link.active,
@@ -171,5 +177,19 @@ a {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     padding: 35px 0;
+  }
+
+  iframe {
+    display: flex;
+    justify-content: center;
+  }
+
+  .red-social {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hfooter{
+    text-align: center;
   }
 }
