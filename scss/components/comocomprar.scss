@@ -26,9 +26,10 @@
     color: aqua;
 }
 
-.navbar-light .navbar-toggler{
-    color: white;
-    border-color: white}
+.navbar-light .navbar-toggler {
+    color: $color-secundario;
+    border-color: $color-secundario
+}
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
@@ -53,6 +54,8 @@ a {
     background: #f0f0f0;
     padding: 40px 20px;
 
+
+
     section {
 
         article {
@@ -73,7 +76,6 @@ a {
     }
 
 }
-
 /* FOOTER */
 
 .pie-pagina {
