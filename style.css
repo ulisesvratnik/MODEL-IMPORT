@@ -21,8 +21,11 @@ h1 h2 h3 h4 {
  
 
 .logo {
-    border-radius: 8px;
-}
+        border-radius: 8px;
+        width: 80px;
+        height: 40px;
+    }
+
 
 
 .nav-link {
@@ -32,7 +35,9 @@ h1 h2 h3 h4 {
 .navbar-light .navbar-nav .nav-link {
     color: white;
 }
-
+.navbar-light .navbar-nav .nav-link:hover {
+    color: aqua;
+}
 
  .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
@@ -547,5 +552,17 @@ article p {
     .wrapper {
         display: block;
     }
+    .hfooter {
+        display: flex;
+        justify-content: center;
+    }
 
+    .red-social {
+        display: flex;
+        justify-content: center;
+    }
+    iframe{
+        display: flex;
+        justify-content: center;
+    }
 }

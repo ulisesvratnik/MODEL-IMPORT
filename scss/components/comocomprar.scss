@@ -26,6 +26,10 @@
     color: aqua;
 }
 
+.navbar-light .navbar-toggler{
+    color: white;
+    border-color: white}
+
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
     color: $color-secundario;
@@ -165,5 +169,9 @@ a {
     .red-social {
         display: flex;
         justify-content: center;
+    }
+
+    .textof {
+        text-align: center;
     }
 }
