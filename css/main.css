@@ -1,3 +1,9 @@
+@charset "UTF-8";
+/* COLORES */
+/* TAMAÑOS */
+/* TIPOGRAFIAS */
+/* MAPS */
+/*  */
 * {
   box-sizing: border-box; }
 
@@ -33,26 +39,17 @@ article p {
   height: 40px; }
 
 .header {
-  background-color: #0d2033;
-  color: white; }
+  background-color: #0d2033; }
 
-.nav-link {
+ul > li > a {
   color: white;
-  font-size: 18px; }
+  transition: all 300ms ease;
+  font-size: 17px; }
 
-.navbar-light .navbar-nav .nav-link {
-  color: white; }
-
-.navbar-light .navbar-nav .nav-link:hover {
-  color: aqua; }
-
-.navbar-light .navbar-toggler {
-  color: white;
-  border-color: white; }
-
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show > .nav-link {
-  color: white; }
+ul > li > a:hover {
+  transform: scale(1.1);
+  background: #0074c7;
+  box-shadow: 0px 0 px 10px 0px rgba(0, 0, 0, 0.5); }
 
 .imagen-portada {
   display: flex;

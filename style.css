@@ -28,7 +28,7 @@ h1 h2 h3 h4 {
 
 
 
-.nav-link {
+/* .nav-link {
     color: white;
     font-size: 18px;
 }
@@ -49,16 +49,28 @@ h1 h2 h3 h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+} 
+  */
+  
+
+ ul > li > a{
+    color: white;
+    transition: all 300ms ease;  
+    font-size: 17px;
 }
+
+ul > li > a:hover{
+    transform: scale(1.1);
+    background: #0074c7;
+    box-shadow: 0px 0 px 10px 0px rgba(0, 0, 0, 0.5);
+} 
+
 
 a {
     text-decoration: none;
     color: black;
 }
 
-main>.container {
-    padding: 30px 0;
-}
 
 h5 {
     font-size: 18px;
@@ -565,4 +577,9 @@ article p {
         display: flex;
         justify-content: center;
     }
+
+    .textof {
+        text-align: center;
+    }
 }
+

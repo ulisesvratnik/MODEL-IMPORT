@@ -8,33 +8,20 @@
 
 .header {
     background-color: $color-principal;
-    color: $color-secundario;
-
-
 }
 
-.nav-link {
-    color: $color-secundario;
-    font-size: $letra-texto;
+ul > li > a{
+    color: white;
+    transition: all 300ms ease;  
+    font-size: 17px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: $color-secundario;
-}
 
-.navbar-light .navbar-nav .nav-link:hover {
-    color: aqua;
-}
-
-.navbar-light .navbar-toggler {
-    color: $color-secundario;
-    border-color: $color-secundario
-}
-
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show>.nav-link {
-    color: $color-secundario;
-}
+ul > li > a:hover{
+    transform: scale(1.1);
+    background: #0074c7;
+    box-shadow: 0px 0 px 10px 0px rgba(0, 0, 0, 0.5);
+} 
 
 .imagen-portada {
     display: flex;
@@ -49,6 +36,7 @@ a {
 }
 
 /* MENU */
+
 
 .menu {
     background: #f0f0f0;
