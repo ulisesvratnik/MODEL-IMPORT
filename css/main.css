@@ -143,4 +143,34 @@ a {
     display: flex;
     justify-content: center; }
   .textof {
-    text-align: center; } }
+    text-align: center; }
+  ul > li > a:hover {
+    transform: scale(1);
+    background: #0074c7;
+    box-shadow: 0px 0 px 10px 0px rgba(0, 0, 0, 0.5); } }
+
+.main-preguntas {
+  height: 100%;
+  width: 100%;
+  background: #f0f0f0;
+  padding: 40px 20px; }
+  .main-preguntas .tituloh2 {
+    height: 100%;
+    width: 100%;
+    text-align: start;
+    max-width: 100%;
+    padding: 10px; }
+  .main-preguntas .tituloh3 {
+    height: 100%;
+    text-align: start;
+    max-width: 83%;
+    flex: 83%;
+    padding: 10px; }
+  .main-preguntas .olproductos {
+    max-width: 100%;
+    flex: 100%;
+    text-align: start;
+    padding: 5px; }
+
+.texto-organizadoli {
+  display: list-item; }

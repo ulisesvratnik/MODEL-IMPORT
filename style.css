@@ -358,14 +358,14 @@ h5 {
     text-align: start;
     max-width: 100%;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .tituloh3 {
     height: 100%;
     text-align: start;
-    max-width: 83%;
-    flex: 83%;
+    max-width: 100%;
+    flex: 100%;
     padding: 10px;
     margin: 10px;
 }
@@ -400,7 +400,9 @@ h5 {
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
+
 }
+
 
 .eli {
     border: 1px solid #9B9B9B;
