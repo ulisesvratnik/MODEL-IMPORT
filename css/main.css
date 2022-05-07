@@ -34,7 +34,6 @@ article p {
   font-size: 18px;
   font-weight: 300px; }
 
-/* FOOTER */
 .pie-pagina {
   width: 100%;
   background-color: #0a141d; }
@@ -44,7 +43,7 @@ article p {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50%;
+    grid-gap: 50px;
     padding: 45px 0; }
     .pie-pagina .grupo-1 .box figure {
       width: 100%;
@@ -56,7 +55,7 @@ article p {
         width: 250px; }
     .pie-pagina .grupo-1 .box h2 {
       color: #fff;
-      margin-bottom: 25%;
+      margin-bottom: 25px;
       font-size: 20px; }
     .pie-pagina .grupo-1 .box p {
       color: #efefef;
@@ -99,13 +98,7 @@ article p {
     justify-content: center; }
   .red-social {
     display: flex;
-    justify-content: center; }
-  .textof {
-    text-align: center; }
-  ul > li > a:hover {
-    transform: scale(1);
-    background: #0074c7;
-    box-shadow: 0px 0 px 10px 0px rgba(0, 0, 0, 0.5); } }
+    justify-content: center; } }
 
 /* BARRA DE NAVEGACION */
 .logo {
