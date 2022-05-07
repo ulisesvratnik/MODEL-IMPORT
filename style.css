@@ -352,40 +352,12 @@ h5 {
     display: list-item;
 }
 
-.tituloh2 {
-    height: 100%;
-    width: 100%;
-    text-align: start;
-    max-width: 100%;
-    padding: 10px;
-    margin: 10px;
-}
-
-.tituloh3 {
-    height: 100%;
-    text-align: start;
-    max-width: 100%;
-    flex: 100%;
-    padding: 10px;
-    margin: 10px;
-}
-
 
 /* OPINIONES */
 
-.tituloo {
-    text-align: center;
-    font-size: 42px;
-    width: 100%;
-}
-
-.titulo3 {
-    text-align: center;
-    font-size: 2em;
-}
 
 
-.mel {
+.opinion1 {
     border: 1px solid #9B9B9B;
     margin: 20px;
     padding: 15px;
@@ -404,14 +376,14 @@ h5 {
 }
 
 
-.eli {
+.opinion2 {
     border: 1px solid #9B9B9B;
     margin: 20px;
     padding: 20px;
     letter-spacing: 1px;
 }
 
-.jose {
+.opinion3 {
     border: 1px solid #9B9B9B;
     margin: 20px;
     padding: 20px;
@@ -435,11 +407,7 @@ h5 {
 
 }
 
-.y12 {
-    margin: 20px;
-    padding: 20px;
-    letter-spacing: 1px;
-}
+
 
 .titulo3 {
     text-align: center;
@@ -457,25 +425,6 @@ h5 {
 }
 
 
-.t50 {
-    margin: 20px;
-    padding: 20px;
-    letter-spacing: 1px;
-
-}
-
-.y12pro {
-    margin: 20px;
-    padding: 20px;
-    letter-spacing: 1px;
-}
-
-.containerr {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 .container-destacados {
     width: 100%;
@@ -483,23 +432,6 @@ h5 {
     flex-wrap: wrap;
     justify-content: center;
     background-color: white;
-}
-
-.tituloh1 {
-    margin: 100px;
-    height: auto;
-    text-align: center;
-    font-size: 40px;
-    padding: 100px;
-    color: black;
-}
-
-
-.containerr {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .container-destacados {
