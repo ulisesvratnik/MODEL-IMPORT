@@ -1,19 +1,19 @@
 h5 {
-    font-size: 18px;
+    font-size: $letra-texto;
     text-align: center;
 }
 
 .ptachado {
     text-decoration: line-through;
-    padding-right: 10px;
-    margin-left: 100px;
+    padding-right: $tamanio-10;
+    margin-left: $tamanio-total;
     color: black;
-    font-size: 20px;
+    font-size: $letra-texto2
 }
 
 .pnotachado {
     color: black;
-    margin-right: 10px;
-    font-size: 20px;
+    margin-right: $tamanio-10;
+    font-size: $letra-texto2;
 }
 

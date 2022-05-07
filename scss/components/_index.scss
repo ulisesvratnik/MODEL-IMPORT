@@ -66,10 +66,10 @@
 /* OPINIONES */
 
 
-.opinion1 {
+.opinion {
     border: 1px solid #9B9B9B;
     margin: $letra-texto2;
-    padding: 15px;
+    padding: $letra-texto2;
     letter-spacing: 1px;
 }
 
@@ -88,13 +88,18 @@
 }
 
 .estrellas {
-    height: 15px;
-    width: 15px;
-    text-align: 10px;
+    height: 65px;
+    width: 65px;
+    text-align: $tamanio-10;
     margin-top: $letra-texto2;
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.titulo3 {
+    text-align: center;
+    font-size: 2em;
 }
 
 /* GALERIA DE IMAGENES */
@@ -181,18 +186,79 @@
 }
 
 .gallery__img {
-    width: 100%;
-    height: 100%;
+    width: $tamanio-total;
+    height: $tamanio-total;
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1285px){
+    .estrellas{
+        height: 55px;
+        width: 55px;
+    }
+}
+
+@media (max-width: 1135px){
+    .estrellas{
+        height: $tamanio-45;
+        width: $tamanio-45;
+    }
+    .titulo3 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+}  
+    @media (max-width: 1021px){
+        .estrellas{
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 985px){
+    .estrellas{
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media (max-width: 868px){
+    .estrellas{
+        height: 34px;
+        width: 34px;
+    }
+}
+
+@media (max-width: 858px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+    }
+    .wrapper {
+        display: block;
+    }
+    .estrellas{
+        height: $tamanio-total/2;
+        width: $tamanio-total/2;
+    }
+} 
+
+@media (max-width: 768px){
     .title {
         font-size: 1.5rem;
         padding: .8em .4em;
-
     }
-
     .gallery {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -207,41 +273,14 @@
             "img8 img8"
             "img8 img8";
     }
-
     .gallery__picture::before {
         font-size: 1rem;
     }
+    .estrellas{
+        height: $tamanio-45;
+        width: $tamanio-45;
 }
-
-@media (max-width: 952px) {
-    .enlace {
-        padding-left: 20px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-
 }
-
-@media (max-width: 858px) {
-
-
-    .pie-pagina .grupo-1 {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0;
-    }
-
-    .wrapper {
-        display: block;
-    }
-
-
-} 
-
-
 
 
 
