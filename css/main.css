@@ -8,15 +8,17 @@
   box-sizing: border-box; }
 
 /* ARTICULOS */
-body {
-  font-family: 'Akshar', sans-serif;
-  font-family: 'Playfair Display', serif; }
+/*  body {
+
+     font-family: 'Akshar', sans-serif;
+    font-family: 'Playfair Display', serif; 
+}
 
 h1 h2 h3 h4 {
-  font-family: 'Akshar', sans-serif;
-  font-family: 'Bebas Neue', cursive;
-  font-family: 'Playfair Display', serif; }
-
+    font-family: 'Akshar', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Playfair Display', serif;
+}  */
 .main {
   background: #f0f0f0;
   padding: 40px 20px; }
@@ -174,3 +176,19 @@ a {
 
 .texto-organizadoli {
   display: list-item; }
+
+h5 {
+  font-size: 18px;
+  text-align: center; }
+
+.ptachado {
+  text-decoration: line-through;
+  padding-right: 10px;
+  margin-left: 100px;
+  color: black;
+  font-size: 20px; }
+
+.pnotachado {
+  color: black;
+  margin-right: 10px;
+  font-size: 20px; }

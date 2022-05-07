@@ -549,9 +549,9 @@ article p {
     font-weight: 300px;
 }
 
-.form-group {
-    background-image: url(imagenes/img3.jpg);
-}
+/* .form-group {
+    
+} */
 
 @media (max-width: 858px) {
 
