@@ -6,14 +6,15 @@ h5 {
 .ptachado {
     text-decoration: line-through;
     padding-right: $tamanio-10;
-    margin-left: $tamanio-total;
+    margin-left: 100px;
     color: black;
-    font-size: $letra-texto2
+    font-size: $letra-texto2;   
 }
 
 .pnotachado {
     color: black;
     margin-right: $tamanio-10;
     font-size: $letra-texto2;
+    
 }
 
