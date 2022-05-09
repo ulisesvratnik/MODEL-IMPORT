@@ -1,32 +1,51 @@
-.main-preguntas {
+  .main-preguntas {
     height: map-get($medidas, tamanio-total);
     width: map-get($medidas, tamanio-total);
     background: #f0f0f0;
-    padding: map-get($medidas, 40) map-get($medidas, 20);
-
-    .tituloh2 {
-        height: map-get($medidas, tamanio-total);
-        width: map-get($medidas, tamanio-total);
-        text-align: start;
-        max-width: map-get($medidas, tamanio-total);
-        padding: map-get($medidas, 10);
-    }
-    .tituloh3 {
-        height: map-get($medidas, tamanio-total);
-        text-align: start;
-        max-width: 83%;
-        flex: 83%;
-        padding: map-get($medidas, 10);
-
-}
-    .olproductos {
-        max-width: map-get($medidas, tamanio-total);
-        flex: map-get($medidas, tamanio-total);
-        text-align: start;
-        padding: map-get($medidas, 5);
-    }
+    padding: 40px 20px;
 }
 
-.texto-organizadoli {
+.textorganizadoli {
     display: list-item;
+} 
+
+.tituloh2 {
+    height: map-get($medidas, tamanio-total);
+    width: map-get($medidas, tamanio-total);
+    text-align: start;
+    max-width: map-get($medidas, tamanio-total);
+    padding: map-get($medidas, 10);
+    margin:  map-get($medidas, 20);
+}
+
+.tituloh3{
+    height: map-get($medidas, tamanio-total);
+    text-align: start;
+    max-width: 83%;
+    flex: 83%;
+    padding: map-get($medidas, 10);
+    margin: map-get($medidas, 10);
+}
+
+.texto-productos {
+    padding: map-get($medidas, 5);
+    margin: map-get($medidas, 10);
+    height: map-get($medidas, tamanio-total);
+    width: map-get($medidas, tamanio-total);
+}
+
+.texto-organizadoproductos{
+    display: block;
+    list-style-type: 1em;
+    margin-block-start: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.olproductos {
+    max-width: map-get($medidas, tamanio-total);
+    flex: map-get($medidas, tamanio-total);
+    text-align: start;
+    padding: map-get($medidas, 5);
 }

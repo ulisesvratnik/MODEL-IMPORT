@@ -1,6 +1,6 @@
 /* MAPS */
 /* EXTEND */
-.flex-center, .pie-pagina .grupo-1 .box figure, .Categorias-productos, .gallery__picture::before {
+.flex-center, .pie-pagina .grupo-1 .box figure, .gallery__picture::before {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -17,11 +17,7 @@ article {
   max-width: 1200px;
   margin: 20px auto;
   padding: 40px;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  background: white; }
 
 article p {
   margin-top: 20px;
@@ -139,26 +135,45 @@ a {
   width: 100%;
   background: #f0f0f0;
   padding: 40px 20px; }
-  .main-preguntas .tituloh2 {
-    height: 100%;
-    width: 100%;
-    text-align: start;
-    max-width: 100%;
-    padding: 10px; }
-  .main-preguntas .tituloh3 {
-    height: 100%;
-    text-align: start;
-    max-width: 83%;
-    flex: 83%;
-    padding: 10px; }
-  .main-preguntas .olproductos {
-    max-width: 100%;
-    flex: 100%;
-    text-align: start;
-    padding: 5px; }
 
-.texto-organizadoli {
+.textorganizadoli {
   display: list-item; }
+
+.tituloh2 {
+  height: 100%;
+  width: 100%;
+  text-align: start;
+  max-width: 100%;
+  padding: 10px;
+  margin: 20px; }
+
+.tituloh3 {
+  height: 100%;
+  text-align: start;
+  max-width: 83%;
+  flex: 83%;
+  padding: 10px;
+  margin: 10px; }
+
+.texto-productos {
+  padding: 5px;
+  margin: 10px;
+  height: 100%;
+  width: 100%; }
+
+.texto-organizadoproductos {
+  display: block;
+  list-style-type: 1em;
+  margin-block-start: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px; }
+
+.olproductos {
+  max-width: 100%;
+  flex: 100%;
+  text-align: start;
+  padding: 5px; }
 
 h5 {
   font-size: 18px;
@@ -177,9 +192,14 @@ h5 {
   font-size: 20px; }
 
 /* MENU */
-.Categorias-productos img {
-  width: 100%;
-  height: 100%; }
+.Categorias-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .Categorias-productos img {
+    width: 100%;
+    height: 100%; }
 
 /* DESTACADOS */
 .tituloo {

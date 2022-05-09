@@ -15,11 +15,14 @@ h1 h2 h3 h4 {
   background: #f0f0f0;
   padding: 40px 20px; }
 
-article {
+ article {
   max-width: 1200px;
   margin: 20px auto;
   padding: 40px;
-  background: #fff; }
+  background: #fff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;} 
 
 article p {
   margin-top: 20px;

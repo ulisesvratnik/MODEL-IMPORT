@@ -40,13 +40,15 @@ a {
     padding: 40px map-get($medidas, 20);
 
     section {
+        article{
 
-        article {
-            .olproductos {
-                padding: map-get($medidas, 5);
+        
+             .olproductos {
+                 padding: map-get($medidas, 5);
                 max-width: map-get($medidas, tamanio-total);
                 flex: map-get($medidas, tamanio-total);
-                text-align: start;
+                text-align: start; 
+                
 
                 .texto-productos {
                     padding: map-get($medidas, 5);

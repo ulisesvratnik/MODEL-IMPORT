@@ -12,7 +12,7 @@ article {
     margin: map-get($medidas, 20) auto;
     padding: map-get($medidas, 40);
     background: map-get($colores, secundario);
-    @include flexbox(column, center, center)
+    
 }
 
 article p {
