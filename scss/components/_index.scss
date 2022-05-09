@@ -1,14 +1,12 @@
 /* MENU */
 
 .Categorias-productos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-        img{
-            width: $tamanio-total;
-            height: $tamanio-total;
-        }
+@extend .flex-center;
+
+    img {
+        width: map-get($medidas, tamanio-total);
+        height: map-get($medidas, tamanio-total);
+    }
 }
 
 /* DESTACADOS */
@@ -16,7 +14,7 @@
 .tituloo {
     text-align: center;
     font-size: 42px;
-    width: $tamanio-total;
+    width: map-get($medidas, tamanio-total);
 
 }
 
@@ -24,26 +22,26 @@
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-auto-rows: minmax(100px, auto);
-    background-color: $color-secundario;
+    background-color:  map-get($colores, secundario);
 
 }
 
 .imgdestacados {
     height: 350px;
     width: 350px;
-    margin-top: $letra-texto2;
-    margin-bottom: $letra-texto2;
-    margin-left: $tamanio-total/2;
-    margin-right: $letra-texto2;
+    margin-top: map-get($medidas, 20);
+    margin-bottom: map-get($medidas, 20);
+    margin-left: map-get($medidas, tamanio-total/2);
+    margin-right: map-get($medidas, 20);
 
 }
 
 .container-destacados {
-    width: $tamanio-total;
+    width: map-get($medidas, tamanio-total);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: white;
+    background-color: map-get($colores, secundario);
 }
 
 .caja {
@@ -58,8 +56,8 @@
     p {
         text-align: center;
         font-size: 24px;
-        color: black;
-    
+        color: map-get($colores, cuaternario);
+
     }
 }
 
@@ -68,30 +66,16 @@
 
 .opinion {
     border: 1px solid #9B9B9B;
-    margin: $letra-texto2;
-    padding: $letra-texto2;
-    letter-spacing: 1px;
-}
-
-.opinion2 {
-    border: 1px solid #9B9B9B;
-    margin: $letra-texto2;
-    padding: $letra-texto2;
-    letter-spacing: 1px;
-}
-
-.opinion3 {
-    border: 1px solid #9B9B9B;
-    margin: $letra-texto2;
-    padding: $letra-texto2;
+    margin: map-get($medidas, 20);
+    padding: map-get($medidas, 20);
     letter-spacing: 1px;
 }
 
 .estrellas {
     height: 65px;
     width: 65px;
-    text-align: $tamanio-10;
-    margin-top: $letra-texto2;
+    text-align: map-get($medidas, 10);
+    margin-top: map-get($medidas, 20);
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -142,10 +126,8 @@
     background-color: #5b40f3a6;
     transform: scale(0);
     transition: transform .4s;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: map-get($colores, terciario);
+    @extend .flex-center;
     font-size: 1.5rem;
 }
 
@@ -186,53 +168,56 @@
 }
 
 .gallery__img {
-    width: $tamanio-total;
-    height: $tamanio-total;
+    width: map-get($medidas, tamanio-total);
+    height: map-get($medidas, tamanio-total);
     object-fit: cover;
 }
 
-@media (max-width: 1285px){
-    .estrellas{
+@media (max-width: 1285px) {
+    .estrellas {
         height: 55px;
         width: 55px;
     }
 }
 
-@media (max-width: 1135px){
-    .estrellas{
-        height: $tamanio-45;
-        width: $tamanio-45;
+@media (max-width: 1135px) {
+    .estrellas {
+        height: map-get($medidas, 45);
+        width: map-get($medidas, 45);
     }
+
     .titulo3 {
         text-align: center;
         font-size: 1.5em;
     }
-}  
-    @media (max-width: 1021px){
-        .estrellas{
-            height: 40px;
-            width: 40px;
-        }
+}
+
+@media (max-width: 1021px) {
+    .estrellas {
+        height: map-get($medidas, 40);
+        width: map-get($medidas, 40);
     }
+}
 
 @media (max-width: 952px) {
     .enlace {
-        padding-left: 20px;
+        padding-left: map-get($medidas, 20);
     }
+
     nav ul li a {
         font-size: 16px;
     }
 }
 
-@media (max-width: 985px){
-    .estrellas{
+@media (max-width: 985px) {
+    .estrellas {
         height: 35px;
         width: 35px;
     }
 }
 
-@media (max-width: 868px){
-    .estrellas{
+@media (max-width: 868px) {
+    .estrellas {
         height: 34px;
         width: 34px;
     }
@@ -245,20 +230,23 @@
         grid-gap: 30px;
         padding: 35px 0;
     }
+
     .wrapper {
         display: block;
     }
-    .estrellas{
-        height: $tamanio-total/2;
-        width: $tamanio-total/2;
-    }
-} 
 
-@media (max-width: 768px){
+    .estrellas {
+        height: map-get($medidas, tamanio-total/2);
+        width: map-get($medidas, tamanio-total/2);
+    }
+}
+
+@media (max-width: 768px) {
     .title {
         font-size: 1.5rem;
         padding: .8em .4em;
     }
+
     .gallery {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -273,15 +261,13 @@
             "img8 img8"
             "img8 img8";
     }
+
     .gallery__picture::before {
         font-size: 1rem;
     }
-    .estrellas{
-        height: $tamanio-45;
-        width: $tamanio-45;
+
+    .estrellas {
+        height: map-get($medidas, 45);
+        width: map-get($medidas, 45);
+    }
 }
-}
-
-
-
-

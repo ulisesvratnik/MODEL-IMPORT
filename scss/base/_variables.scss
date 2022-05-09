@@ -1,25 +1,48 @@
-/* COLORES */
 
-$color-principal: #0d2033;
-$color-secundario: white;
-$color-terciario: #fff;
-
-/* TAMAÑOS */
-
-$tamanio-total: 100%;
-$tamanio-medio: $tamanio-total/2;
-$tamanio-cuarto: $tamanio-medio/2;
-$tamanio-5: 5px;
-$tamanio-10: 10px;
-$tamanio-45: 45px;
-
-/* TIPOGRAFIAS */
-
-$letra-texto: 18px;
-$letra-texto2: 20px;
 
 /* MAPS */
 
-/*  */
+$colores:(
+    principal: #0d2033,
+    secundario: white,
+    terciario: #fff,
+    cuaternario: black,
+);
 
+$tamanio-tipografia:(
+    titulos: 24px,
+    subtitulos: 22px,
+    textos: 20px,
+    parrafos: 18px,
+    letra-chica: 12px,
+);
+
+$medidas:(
+    tamanio-total: 100%,
+    tamanio-medio: tamanio-total/2, /* 50PX */
+    45: 45px,
+    40: 40px,
+    tamanio-cuarto: tamanio-medio/2, /* 25PX */
+    20: 20px,
+    18: 18px,
+    10: 10px,
+    5: 5px,
+);
+
+/* EXTEND */
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+/* MIXIN */
+
+@mixin flexbox ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+};
 

@@ -1,58 +1,44 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-/* ARTICULOS */
-
-/*  body {
-
-     font-family: 'Akshar', sans-serif;
-    font-family: 'Playfair Display', serif; 
-}
-
-h1 h2 h3 h4 {
-    font-family: 'Akshar', sans-serif;
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Playfair Display', serif;
-}  */
-
 .main {
     background: #f0f0f0;
-    padding: 40px $letra-texto2;
+    padding: map-get($medidas, 40) map-get($medidas, 20);
 }
 
 article {
     max-width: 1200px;
-    margin: $letra-texto2 auto;
-    padding: 40px;
-    background: #fff;
+    margin: map-get($medidas, 20) auto;
+    padding: map-get($medidas, 40);
+    background: map-get($colores, secundario);
+    @include flexbox(column, center, center)
 }
 
 article p {
-    margin-top: $letra-texto2;
-    font-size: $letra-texto;
+    margin-top: map-get($medidas, 20);
+    font-size: map-get($medidas, 18);
     font-weight: 300px;
 }
 
+/* FOOTER */
 .pie-pagina {
-    width: $tamanio-total;
+    width: map-get($medidas, tamanio-total); 
     background-color: #0a141d;
 
     & .grupo-1 {
-        width: $tamanio-total;
+        width: map-get($medidas, tamanio-total);
         max-width: 1000px;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
-        padding: 45px 0;
+        grid-gap: map-get($medidas, tamanio-total/2);
+        padding: map-get($medidas, 45) 0;
 
         .box figure {
-            width: $tamanio-total;
-            height: $tamanio-total;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            width: map-get($medidas, tamanio-total);
+            height: map-get($medidas, tamanio-total);
+            @extend .flex-center;
 
             img {
                 width: 250px;
@@ -60,25 +46,25 @@ article p {
         }
 
         .box h2 {
-            color: $color-terciario;
-            margin-bottom: 25px;
-            font-size: $letra-texto2;
+            color:  map-get($colores, terciario);
+            margin-bottom: map-get($medidas, tamanio-medio/2);
+            font-size: map-get($colores, secundario);
         }
 
         .box p {
             color: #efefef;
-            margin-bottom: $tamanio-10;
+            margin-bottom: map-get($medidas, 10);
         }
 
         .red-social a {
             display: inline-block;
             text-decoration: none;
-            width: $tamanio-45;
-            height: $tamanio-45;
-            line-height: $tamanio-45;
-            color: $color-terciario;
-            margin-right: $tamanio-10;
-            background-color: $color-principal;
+            width: map-get($medidas, 45);
+            height: map-get($medidas, 45);
+            line-height: map-get($medidas, 45);
+            color: map-get($colores, terciario);
+            margin-right: map-get($medidas, 10);
+            background-color: map-get($colores, principal);
             text-align: center;
             transition: all 300ms ease;
 
@@ -90,9 +76,9 @@ article p {
 
     .grupo-2 {
         background-color: #0a1a2a;
-        padding: 15px $tamanio-10;
+        padding: 15px map-get($medidas, 10);
         text-align: center;
-        color: $color-terciario;
+        color: map-get($colores, terciario);
 
         small {
             font-size: 15px;
@@ -102,7 +88,7 @@ article p {
 
 @media (max-width: 952px) {
     .enlace {
-        padding-left: 20px;
+        padding-left: map-get($medidas, 20);
     }
 
     nav ul li a {
@@ -125,12 +111,8 @@ article p {
     }
 
     .red-social {
+
         display: flex;
         justify-content: center;
     }
 }
-
-  
-
-
-

@@ -1,29 +1,29 @@
 .main-preguntas {
-    height: $tamanio-total;
-    width: $tamanio-total;
+    height: map-get($medidas, tamanio-total);
+    width: map-get($medidas, tamanio-total);
     background: #f0f0f0;
-    padding: 40px $letra-texto2;
+    padding: map-get($medidas, 40) map-get($medidas, 20);
 
     .tituloh2 {
-        height: $tamanio-total;
-        width: $tamanio-total;
+        height: map-get($medidas, tamanio-total);
+        width: map-get($medidas, tamanio-total);
         text-align: start;
-        max-width: $tamanio-total;
-        padding: $tamanio-10;
+        max-width: map-get($medidas, tamanio-total);
+        padding: map-get($medidas, 10);
     }
     .tituloh3 {
-        height: $tamanio-total;
+        height: map-get($medidas, tamanio-total);
         text-align: start;
         max-width: 83%;
         flex: 83%;
-        padding: $tamanio-10;
+        padding: map-get($medidas, 10);
 
 }
     .olproductos {
-        max-width: $tamanio-total;
-        flex: $tamanio-total;
+        max-width: map-get($medidas, tamanio-total);
+        flex: map-get($medidas, tamanio-total);
         text-align: start;
-        padding: $tamanio-5;
+        padding: map-get($medidas, 5);
     }
 }
 

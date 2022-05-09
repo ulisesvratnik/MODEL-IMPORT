@@ -1,20 +1,20 @@
 h5 {
-    font-size: $letra-texto;
+    font-size: map-get($tamanio-tipografia, parrafos);
     text-align: center;
 }
 
 .ptachado {
     text-decoration: line-through;
-    padding-right: $tamanio-10;
+    padding-right: map-get($medidas, 10);
     margin-left: 100px;
-    color: black;
-    font-size: $letra-texto2;   
+    color: map-get($colores, cuaternario);
+    font-size: map-get($medidas, 20);   
 }
 
 .pnotachado {
-    color: black;
-    margin-right: $tamanio-10;
-    font-size: $letra-texto2;
+    color: map-get($colores, cuaternario);
+    margin-right: map-get($medidas, 10);
+    font-size: map-get($tamanio-tipografia, textos);
     
 }
 
