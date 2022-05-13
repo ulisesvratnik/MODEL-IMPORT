@@ -3,6 +3,25 @@
     width: map-get($medidas, tamanio-total);
     background: #f0f0f0;
     padding: 40px 20px;
+
+    ol{
+        /* font-family: 'Abel', sans-serif; */
+        font-family: 'Vollkorn', serif;
+    }
+
+    p{
+        /* font-family: 'Abel', sans-serif; */
+        font-family: 'Vollkorn', serif;
+    }
+
+    li{
+         /* font-family: 'Abel', sans-serif;  */
+         font-family: 'Vollkorn', serif; 
+    }
+
+    h2 h3{
+        font-family: 'Oswald', sans-serif;
+    }
 }
 
 .textorganizadoli {
