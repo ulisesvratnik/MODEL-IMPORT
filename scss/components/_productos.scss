@@ -18,5 +18,167 @@ h5 {
     
 }
 
+@media (max-width: 1224px) {
+    h5 {
+        font-size: map-get($tamanio-tipografia, parrafos);
+        text-align: center;
+    }
+    
+    .ptachado {
+        text-decoration: line-through;
+         padding-right: 5px; 
+         margin-left: 50px; 
+        color: map-get($colores, cuaternario);
+        font-size: 20px;   
+    }
+    
+    .pnotachado {
+        color: map-get($colores, cuaternario);
+         margin-right:5px; 
+        font-size: 20px;
+        
+    }
+    
+}
+
+@media (max-width: 995px) {
+    h5 {
+        font-size: map-get($tamanio-tipografia, parrafos);
+        text-align: center;
+    }
+    
+    .ptachado {
+        text-decoration: line-through;
+         padding-right: 5px; 
+         margin-left: 30px; 
+        color: map-get($colores, cuaternario);
+        font-size: 20px;   
+    }
+    
+    .pnotachado {
+        color: map-get($colores, cuaternario);
+         margin-right:5px; 
+        font-size: 20px;
+        
+    }
+    
+}
+
+@media (max-width: 789px) {
+    h5 {
+        font-size: map-get($tamanio-tipografia, parrafos);
+        text-align: center;
+    }
+    
+    .ptachado {
+        text-decoration: line-through;
+         padding-right: 5px; 
+         margin-left: 10px; 
+        color: map-get($colores, cuaternario);
+        font-size: 20px;   
+    }
+    
+    .pnotachado {
+        color: map-get($colores, cuaternario);
+         margin-right:5px; 
+        font-size: 20px;
+        
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    h5 {
+        font-size: map-get($tamanio-tipografia, parrafos);
+        text-align: center;
+    }
+    
+    .ptachado {
+        text-decoration: line-through;
+         padding-right: 10px; 
+         margin-left: 20px; 
+        color: map-get($colores, cuaternario);
+        font-size: 20px;   
+    }
+    
+    .pnotachado {
+        color: map-get($colores, cuaternario);
+         margin-right:5px; 
+        font-size: 20px;
+        
+    }
+    
+}
+
+
+@media (max-width: 575px) {
+    h5 {
+        font-size: map-get($tamanio-tipografia, parrafos);
+        text-align: center;
+    }
+    
+    .ptachado {
+        text-decoration: line-through;
+         padding-right: 20px; 
+         margin-left: 100px; 
+        color: map-get($colores, cuaternario);
+        font-size: 20px;   
+    }
+    
+    .pnotachado {
+        color: map-get($colores, cuaternario);
+         margin-right:25px; 
+        font-size: 20px;
+        
+    }
+    
+}
+
+@media (max-width: 496px) {
+    h5 {
+        font-size: map-get($tamanio-tipografia, parrafos);
+        text-align: center;
+    }
+    
+    .ptachado {
+        text-decoration: line-through;
+         padding-right: 5px; 
+         margin-left: 40px; 
+        color: map-get($colores, cuaternario);
+        font-size: 20px;   
+    }
+    
+    .pnotachado {
+        color: map-get($colores, cuaternario);
+         margin-right:5px; 
+        font-size: 20px;
+        
+    }
+    
+}
+
+@media (max-width: 369px) {
+    h5 {
+        font-size: map-get($tamanio-tipografia, parrafos);
+        text-align: center;
+    }
+    
+    .ptachado {
+        text-decoration: line-through;
+         padding-right: 5px; 
+         margin-left: 5px; 
+        color: map-get($colores, cuaternario);
+        font-size: 20px;   
+    }
+    
+    .pnotachado {
+        color: map-get($colores, cuaternario);
+         margin-right:5px; 
+        font-size: 20px;
+        
+    }
+    
+}
 
 

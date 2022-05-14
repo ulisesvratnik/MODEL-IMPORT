@@ -14,6 +14,9 @@
 
 /* MIXIN */
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
 /* WHATSAPP */
@@ -248,6 +251,111 @@ h5 {
   margin-right: 10px;
   font-size: 20px; }
 
+@media (max-width: 1224px) {
+  h5 {
+    font-size: 18px;
+    text-align: center; }
+  .ptachado {
+    text-decoration: line-through;
+    padding-right: 5px;
+    margin-left: 50px;
+    color: black;
+    font-size: 20px; }
+  .pnotachado {
+    color: black;
+    margin-right: 5px;
+    font-size: 20px; } }
+
+@media (max-width: 995px) {
+  h5 {
+    font-size: 18px;
+    text-align: center; }
+  .ptachado {
+    text-decoration: line-through;
+    padding-right: 5px;
+    margin-left: 30px;
+    color: black;
+    font-size: 20px; }
+  .pnotachado {
+    color: black;
+    margin-right: 5px;
+    font-size: 20px; } }
+
+@media (max-width: 789px) {
+  h5 {
+    font-size: 18px;
+    text-align: center; }
+  .ptachado {
+    text-decoration: line-through;
+    padding-right: 5px;
+    margin-left: 10px;
+    color: black;
+    font-size: 20px; }
+  .pnotachado {
+    color: black;
+    margin-right: 5px;
+    font-size: 20px; } }
+
+@media (max-width: 767px) {
+  h5 {
+    font-size: 18px;
+    text-align: center; }
+  .ptachado {
+    text-decoration: line-through;
+    padding-right: 10px;
+    margin-left: 20px;
+    color: black;
+    font-size: 20px; }
+  .pnotachado {
+    color: black;
+    margin-right: 5px;
+    font-size: 20px; } }
+
+@media (max-width: 575px) {
+  h5 {
+    font-size: 18px;
+    text-align: center; }
+  .ptachado {
+    text-decoration: line-through;
+    padding-right: 20px;
+    margin-left: 100px;
+    color: black;
+    font-size: 20px; }
+  .pnotachado {
+    color: black;
+    margin-right: 25px;
+    font-size: 20px; } }
+
+@media (max-width: 496px) {
+  h5 {
+    font-size: 18px;
+    text-align: center; }
+  .ptachado {
+    text-decoration: line-through;
+    padding-right: 5px;
+    margin-left: 40px;
+    color: black;
+    font-size: 20px; }
+  .pnotachado {
+    color: black;
+    margin-right: 5px;
+    font-size: 20px; } }
+
+@media (max-width: 369px) {
+  h5 {
+    font-size: 18px;
+    text-align: center; }
+  .ptachado {
+    text-decoration: line-through;
+    padding-right: 5px;
+    margin-left: 5px;
+    color: black;
+    font-size: 20px; }
+  .pnotachado {
+    color: black;
+    margin-right: 5px;
+    font-size: 20px; } }
+
 /* MENU */
 .Categorias-productos img {
   width: 100%;
@@ -436,11 +544,6 @@ h5 {
   .estrellas {
     height: 45px;
     width: 45px; } }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
 
 .container-contacto {
   width: 100%;
