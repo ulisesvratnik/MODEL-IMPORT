@@ -139,7 +139,7 @@ article {
 /* BARRA DE NAVEGACION */
 .logo {
   width: 105px;
-  height: 90px; }
+  height: 100px; }
 
 .header {
   background-color: #0d2033; }
@@ -147,7 +147,7 @@ article {
 ul > li > a {
   color: white;
   transition: all 300ms ease;
-  font-size: 19px;
+  font-size: 18px;
   font-family: 'Manrope', sans-serif; }
 
 ul > li > a:hover {
@@ -251,110 +251,89 @@ h5 {
   margin-right: 10px;
   font-size: 20px; }
 
+.boton-d {
+  border: none;
+  padding: 5px 70px;
+  text-align: center;
+  font-size: 18px;
+  background: #0d2033;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 300ms ease;
+  outline: 0px;
+  will-change: transform;
+  text-align: center; }
+
 @media (max-width: 1224px) {
-  h5 {
-    font-size: 18px;
-    text-align: center; }
   .ptachado {
-    text-decoration: line-through;
     padding-right: 5px;
-    margin-left: 50px;
-    color: black;
-    font-size: 20px; }
+    margin-left: 50px; }
   .pnotachado {
-    color: black;
-    margin-right: 5px;
-    font-size: 20px; } }
+    margin-right: 5px; } }
+
+@media (max-width: 1200px) {
+  .boton-d {
+    padding: 5px 40px; }
+  .ptachado {
+    padding-right: 5px;
+    margin-left: 50px; }
+  .pnotachado {
+    margin-right: 5px; } }
 
 @media (max-width: 995px) {
-  h5 {
-    font-size: 18px;
-    text-align: center; }
+  .boton-d {
+    padding: 5px 20px; }
   .ptachado {
-    text-decoration: line-through;
     padding-right: 5px;
-    margin-left: 30px;
-    color: black;
-    font-size: 20px; }
+    margin-left: 30px; }
   .pnotachado {
-    color: black;
-    margin-right: 5px;
-    font-size: 20px; } }
+    margin-right: 5px; } }
 
 @media (max-width: 789px) {
-  h5 {
-    font-size: 18px;
-    text-align: center; }
   .ptachado {
-    text-decoration: line-through;
     padding-right: 5px;
-    margin-left: 10px;
-    color: black;
-    font-size: 20px; }
+    margin-left: 10px; }
   .pnotachado {
-    color: black;
-    margin-right: 5px;
-    font-size: 20px; } }
+    margin-right: 5px; } }
 
 @media (max-width: 767px) {
-  h5 {
-    font-size: 18px;
-    text-align: center; }
   .ptachado {
-    text-decoration: line-through;
     padding-right: 10px;
-    margin-left: 20px;
-    color: black;
-    font-size: 20px; }
+    margin-left: 20px; }
   .pnotachado {
-    color: black;
-    margin-right: 5px;
-    font-size: 20px; } }
+    margin-right: 5px; } }
 
 @media (max-width: 575px) {
-  h5 {
-    font-size: 18px;
-    text-align: center; }
+  .boton-d {
+    padding: 5px 50px; }
   .ptachado {
-    text-decoration: line-through;
     padding-right: 20px;
-    margin-left: 100px;
-    color: black;
-    font-size: 20px; }
+    margin-left: 100px; }
   .pnotachado {
-    color: black;
     margin-right: 25px;
     font-size: 20px; } }
 
 @media (max-width: 496px) {
-  h5 {
-    font-size: 18px;
-    text-align: center; }
+  .boton-d {
+    padding: 5px 15px; }
   .ptachado {
-    text-decoration: line-through;
     padding-right: 5px;
-    margin-left: 40px;
-    color: black;
-    font-size: 20px; }
+    margin-left: 40px; }
   .pnotachado {
-    color: black;
-    margin-right: 5px;
-    font-size: 20px; } }
+    margin-right: 5px; } }
+
+.boton-d {
+  padding: 5px 30px; }
 
 @media (max-width: 369px) {
-  h5 {
-    font-size: 18px;
-    text-align: center; }
+  .boton-d {
+    padding: 5px 20px; }
   .ptachado {
-    text-decoration: line-through;
     padding-right: 5px;
-    margin-left: 5px;
-    color: black;
-    font-size: 20px; }
+    margin-left: 5px; }
   .pnotachado {
-    color: black;
-    margin-right: 5px;
-    font-size: 20px; } }
+    margin-right: 5px; } }
 
 /* MENU */
 .Categorias-productos img {
@@ -620,7 +599,7 @@ h5 {
   border: none;
   padding: 12px 73px;
   font-size: 18px;
-  background: #520E0E;
+  background: #A20202;
   border-radius: 3px;
   color: #fff;
   cursor: pointer;

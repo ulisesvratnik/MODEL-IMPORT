@@ -18,70 +18,92 @@ h5 {
     
 }
 
+.boton-d{
+    border: none;
+    padding: 5px 70px;
+    text-align: center;
+    font-size: 18px;
+    background: #0d2033;
+    border-radius: 3px;
+    color: map-get($colores ,terciario);
+    cursor: pointer;
+    transition: all 300ms ease;
+    outline: 0px;
+    will-change: transform;
+    text-align: center;
+}
+
 @media (max-width: 1224px) {
-    h5 {
-        font-size: map-get($tamanio-tipografia, parrafos);
-        text-align: center;
-    }
+
     
     .ptachado {
-        text-decoration: line-through;
          padding-right: 5px; 
-         margin-left: 50px; 
-        color: map-get($colores, cuaternario);
-        font-size: 20px;   
+         margin-left: 50px;   
     }
     
     .pnotachado {
-        color: map-get($colores, cuaternario);
          margin-right:5px; 
-        font-size: 20px;
         
     }
     
 }
 
-@media (max-width: 995px) {
-    h5 {
-        font-size: map-get($tamanio-tipografia, parrafos);
-        text-align: center;
-    }
+@media (max-width: 1200px) {
+
+    .boton-d{
     
+        padding: 5px 40px;
+    }
     .ptachado {
-        text-decoration: line-through;
+
          padding-right: 5px; 
-         margin-left: 30px; 
-        color: map-get($colores, cuaternario);
-        font-size: 20px;   
+         margin-left: 50px; 
     }
     
     .pnotachado {
-        color: map-get($colores, cuaternario);
+
          margin-right:5px; 
-        font-size: 20px;
+
+        
+    }
+}
+
+@media (max-width: 995px) {
+
+    .boton-d{
+    
+        padding: 5px 20px;
+    }
+    .ptachado {
+
+         padding-right: 5px; 
+         margin-left: 30px; 
+
+  
+    }
+    
+    .pnotachado {
+
+         margin-right:5px; 
+
         
     }
     
 }
 
 @media (max-width: 789px) {
-    h5 {
-        font-size: map-get($tamanio-tipografia, parrafos);
-        text-align: center;
-    }
+
     
     .ptachado {
-        text-decoration: line-through;
+
          padding-right: 5px; 
          margin-left: 10px; 
-        color: map-get($colores, cuaternario);
-        font-size: 20px;   
+
     }
     
     .pnotachado {
-        color: map-get($colores, cuaternario);
          margin-right:5px; 
-        font-size: 20px;
+
         
     }
 
@@ -89,23 +111,16 @@ h5 {
 
 
 @media (max-width: 767px) {
-    h5 {
-        font-size: map-get($tamanio-tipografia, parrafos);
-        text-align: center;
-    }
-    
+
     .ptachado {
-        text-decoration: line-through;
          padding-right: 10px; 
          margin-left: 20px; 
-        color: map-get($colores, cuaternario);
-        font-size: 20px;   
+
     }
     
     .pnotachado {
-        color: map-get($colores, cuaternario);
          margin-right:5px; 
-        font-size: 20px;
+
         
     }
     
@@ -113,21 +128,19 @@ h5 {
 
 
 @media (max-width: 575px) {
-    h5 {
-        font-size: map-get($tamanio-tipografia, parrafos);
-        text-align: center;
-    }
     
+    .boton-d{
+    
+        padding: 5px 50px;
+    }
     .ptachado {
-        text-decoration: line-through;
+
          padding-right: 20px; 
          margin-left: 100px; 
-        color: map-get($colores, cuaternario);
-        font-size: 20px;   
+ 
     }
     
     .pnotachado {
-        color: map-get($colores, cuaternario);
          margin-right:25px; 
         font-size: 20px;
         
@@ -136,49 +149,46 @@ h5 {
 }
 
 @media (max-width: 496px) {
-    h5 {
-        font-size: map-get($tamanio-tipografia, parrafos);
-        text-align: center;
+
+    .boton-d{
+    
+        padding: 5px 15px;
     }
     
     .ptachado {
-        text-decoration: line-through;
+
          padding-right: 5px; 
          margin-left: 40px; 
-        color: map-get($colores, cuaternario);
-        font-size: 20px;   
+
     }
     
     .pnotachado {
-        color: map-get($colores, cuaternario);
+
          margin-right:5px; 
-        font-size: 20px;
+
         
     }
     
 }
-
+.boton-d{
+    
+    padding: 5px 30px;
+}
 @media (max-width: 369px) {
-    h5 {
-        font-size: map-get($tamanio-tipografia, parrafos);
-        text-align: center;
-    }
+    .boton-d{
     
+        padding: 5px 20px;
+    }
     .ptachado {
-        text-decoration: line-through;
          padding-right: 5px; 
-         margin-left: 5px; 
-        color: map-get($colores, cuaternario);
-        font-size: 20px;   
+         margin-left: 5px;   
     }
     
     .pnotachado {
-        color: map-get($colores, cuaternario);
+
          margin-right:5px; 
-        font-size: 20px;
+
         
     }
     
 }
-
-

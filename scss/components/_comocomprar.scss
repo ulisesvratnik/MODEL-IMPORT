@@ -2,7 +2,7 @@
 
 .logo {
     width: 105px;
-    height: 90px;
+    height: 100px;
 }
 
 .header {
@@ -13,7 +13,7 @@
 ul>li>a {
     color: map-get($colores, secundario);
     transition: all 300ms ease;
-    font-size: 19px;
+    font-size: 18px;
     font-family: 'Manrope', sans-serif;
 }
 
