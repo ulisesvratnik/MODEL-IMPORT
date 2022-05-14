@@ -290,6 +290,10 @@ h5 {
   .pnotachado {
     margin-right: 5px; } }
 
+@media (max-width: 991px) {
+  .boton-d {
+    padding: 5px 100px; } }
+
 @media (max-width: 789px) {
   .ptachado {
     padding-right: 5px;

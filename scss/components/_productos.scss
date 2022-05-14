@@ -18,7 +18,7 @@ h5 {
     
 }
 
-.boton-d{
+ .boton-d{
     border: none;
     padding: 5px 70px;
     text-align: center;
@@ -31,7 +31,7 @@ h5 {
     outline: 0px;
     will-change: transform;
     text-align: center;
-}
+} 
 
 @media (max-width: 1224px) {
 
@@ -89,6 +89,13 @@ h5 {
         
     }
     
+}
+
+@media (max-width: 991px) {
+
+    .boton-d{
+        padding: 5px 100px;
+}
 }
 
 @media (max-width: 789px) {
