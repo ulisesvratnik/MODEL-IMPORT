@@ -87,11 +87,11 @@ article {
         .red-social a {
             display: inline-block;
             text-decoration: none;
-            width: map-get($medidas, 45);
-            height: map-get($medidas, 45);
-            line-height: map-get($medidas, 45);
+            width:  map-get($medidas, 45) ;
+            height:  map-get($medidas, 45) ;
+            line-height:  map-get($medidas, 45) ;
             color: map-get($colores ,terciario);
-            margin-right: map-get($medidas, 10);
+            margin-right:  map-get($medidas, 10);
             background-color: #0d2033;
             text-align: center;
             transition: all 300ms ease;
@@ -114,6 +114,29 @@ article {
         font-size: 15px;
 
     }
+
+    .text{
+        text-align: center;
+    }
+
+    .hfooter {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .red-social {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .figura {
+        display: flex;
+        justify-content: center;
+    }
+
+    
 }
 
 @media (max-width: 952px) {
@@ -153,4 +176,8 @@ article {
         display: flex;
         justify-content: center;
     }
+
+   .text{
+       text-align: center;
+   }
 }

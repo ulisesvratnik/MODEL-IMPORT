@@ -97,6 +97,17 @@ article {
     color: #fff; }
   .pie-pagina .grupo-2 small {
     font-size: 15px; }
+  .pie-pagina .text {
+    text-align: center; }
+  .pie-pagina .hfooter {
+    display: flex;
+    justify-content: center; }
+  .pie-pagina .red-social {
+    display: flex;
+    justify-content: center; }
+  .pie-pagina .figura {
+    display: flex;
+    justify-content: center; }
 
 @media (max-width: 952px) {
   .enlace {
@@ -118,7 +129,9 @@ article {
     justify-content: center; }
   .figura {
     display: flex;
-    justify-content: center; } }
+    justify-content: center; }
+  .text {
+    text-align: center; } }
 
 /* BARRA DE NAVEGACION */
 .logo {
