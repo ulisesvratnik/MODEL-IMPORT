@@ -6,25 +6,23 @@
 }
 
 .header {
-    background-color:  map-get($colores, principal);
-    
+    background-color: map-get($colores, principal);
+
 }
 
 ul>li>a {
     color: map-get($colores, secundario);
     transition: all 300ms ease;
     font-size: 19px;
-
-    font-family: 'Oswald', sans-serif;
-
-} 
+    font-family: 'Manrope', sans-serif;
+}
 
 
 ul>li>a:hover {
     transform: scale(1.0);
-    background:   #0074c7 ;
+    background: #0074c7;
     box-shadow: 0px 0 px 10px 20px rgba(0, 0, 0, 0.5);
-   
+
 }
 
 .imagen-portada {
@@ -34,7 +32,7 @@ ul>li>a:hover {
 a {
     text-decoration: none;
     color: map-get($colores, cuaternario);
-    
+
 }
 
 
@@ -46,25 +44,30 @@ a {
     background: #f0f0f0;
     padding: 40px map-get($medidas, 20);
 
-    section {
-        article{
 
-        
-             .olproductos {
-                 padding: map-get($medidas, 5);
+    section {
+        article {
+
+
+            .olproductos {
+                padding: map-get($medidas, 5);
                 max-width: map-get($medidas, tamanio-total);
                 flex: map-get($medidas, tamanio-total);
-                text-align: start; 
-                
+                text-align: start;
+                font-family: 'Vollkorn', serif;
+
 
                 .texto-productos {
                     padding: map-get($medidas, 5);
                     margin: map-get($medidas, 10);
                     height: map-get($medidas, tamanio-total);
                     width: map-get($medidas, tamanio-total);
+                    font-family: 'Vollkorn', serif;
+
                 }
             }
         }
     }
+
 
 }

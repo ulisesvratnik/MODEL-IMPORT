@@ -22,6 +22,9 @@
     <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/b94f2208f0.js" crossorigin="anonymous"></script>
 
+    <!--ICON-FONT-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
     <!-- TITULO -->
     <title>Contactanos | Model Import</title>
 
@@ -29,10 +32,18 @@
     <link rel="icon" type="image/x-icon" href="../imagenes/logomi.jpeg">
 
     <!-- TIPOGRAFIA -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Bebas+Neue&family=Lobster&family=Oswald:wght@500&family=Playfair+Display:ital@1&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
+    <a href="https://web.whatsapp.com/" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
 
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark  ">
@@ -83,17 +94,16 @@
     <main class="menu">
         <section>
             <article>
+
                 <div class="container-contacto">
                     <div class="content-contacto">
                         <div class="info-contacto">
                             <h2>Informacion</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam soluta rem impedit minus
-                                doloremque id
-                                itaque suscipit unde. Sapiente, dolor.</p>
+                            <p>A la brevedad nuestros expertos se pondran en contacto para ayudarte a resolver todas tus dudas. ¡Estamos para ayudarte!</p>
                             <div class="contacto">
                                 <a href="#">
                                     <i class="fa fa-phone"></i>
-                                    <span>+54 011-12543457</span>
+                                    <span>+54 011-23456298</span>
                                 </a>
                                 <a href="#">
                                     <i class="fa fa-envelope"></i>
@@ -106,67 +116,43 @@
                             </div>
                         </div>
                         <div class="formulario">
-                            <h2>Contacto</h2>
-                            <form action="#" class="form">
-                                <input type="text" name="nombre" placeholder="Nombre Completo" class="campo" required>
+                            <h2>Formulario De Contacto</h2>
+                            <form action="#" class="form" id="form">
+                                <input type="text" name="name" placeholder="Nombre Completo" class="campo" required>
                                 <div class="box">
-                                    <input type="text" name="nombre" placeholder="Email" class="campo" required>
-                                    <input type="text" name="nombre" placeholder="Asunto" class="campo" required>
+                                    <input type="text" name="email" placeholder="Email" class="campo" required>
+                                    <input type="text" name="subject" placeholder="Asunto" class="campo" required>
                                 </div>
-                                <textarea name="mensaje" id="mensaje" placeholder="Mensaje..." class="campo"></textarea>
-                                <input type="submit" name="btnenviar" value="Enviar mensaje" class="boton">
+
+
+                                <textarea name="message" id="mensaje" placeholder="Mensaje..." class="campo"></textarea>
+                                <input type="reset" id="button" value="RESTABLECER" class="botoon">
+                                <input type="submit" id="button" value="ENVIAR MENSAJE" class="boton">
+
+
                             </form>
+                            <script type="text/javascript"
+                                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+                            <script type="text/javascript">
+                                emailjs.init('5eYqq8ToavJKuN2XP')
+                            </script>
                         </div>
                     </div>
                 </div>
+            </article>
         </section>
-        </article>
-        <!--   <main>
-         <article>
-            <div class="form-group">
-                <h1 class="text-center text-uppercase">Formulario de Contacto</h3>
-                    <form id="form">
-                        <div class="mb-3">
-                            <label for="exampleInputEmail" class="form-label">Nombre y Apellido:</label><br>
-                            <input type="text" class="form-control" placeholder="Ingrese su Nombre" maxlength="20"
-                                name="name_last" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Correo Electronico:</label><br>
-                            <input type="email" class="form-control" placeholder="Ingrese su email" name="email"
-                                required>
-                            <small id="emailHelp" class="form-text text-black size-17px">Nunca compartiremos su correo
-                                electrónico con
-                                nadie más.</small>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Telefono:</label><br>
-                            <input type="tel" class="form-control" placeholder="Ingrese su telefono" name="phone"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Mensaje</label><br>
-                            <textarea type="text" class="form-control" placeholder="Enviar mensaje" name="message"
-                                required></textarea>
-                        </div>
-                        <div>
-                            <div class="d-grid gap-2 d-md-block">
-                                <button class="btn btn-danger btn-lg" type="reset"
-                                    class="d-grid gap-2 d-md-block">Restablecer</button>
-                                <button class="btn btn-primary btn-lg" type="submit" id="button" value="Enviar Mensaje">Enviar
-                                    Mensaje</button>
-                            </div>
-                        </div>
-                    </form>
-            </div>
-        </article> -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-        <script type="text/javascript">
-            emailjs.init('5eYqq8ToavJKuN2XP')
-        </script>
-
     </main>
+
+
+
+
+
+
+
+
+
+
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
@@ -181,10 +167,10 @@
             </div>
             <div class="box">
                 <h2 class="hfooter">SOBRE NOSOTROS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis alias quidem sapiente! sit amet
-                    consectetur adipisicing.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatibus labore nihil aliquid
-                    sit amet consectetur adipisicing Perspiciatis alias quidem voluptatibus labore nihil voluptatibus.
+                <p>Somos una tienda online de productos tecnológicos. Nos caracterizamos por seleccionar y ofrecer
+                    la mejor variedad de modelos y así encontrar todo lo que buscan en un solo lugar.</p>
+                <p> Nuestra atención personalizada hace que día a día nos elijan y nos sigan eligiendo.
+                    Nuestra meta es seguir creciendo y ampliar nuestra variedad de productos.
                 </p>
             </div>
             <div class="box">
@@ -216,14 +202,14 @@
             btn.value = 'Enviando...';
 
             const serviceID = 'default_service';
-            const templateID = 'template_8h4qvqi';
+            const templateID = 'template_38j0hjs';
 
             emailjs.sendForm(serviceID, templateID, this)
                 .then(() => {
-                    btn.value = 'Enviar Mensaje';
-                    alert('Mensaje Enviado Correctamente!');
+                    btn.value = 'ENVIAR MENSAJE';
+                    alert('Mensaje enviado correctamente!');
                 }, (err) => {
-                    btn.value = 'Enviar Mensaje';
+                    btn.value = 'ENVIAR MENSAJE';
                     alert(JSON.stringify(err));
                 });
         });

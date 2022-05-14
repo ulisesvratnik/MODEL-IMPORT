@@ -1,56 +1,53 @@
-/* .btn {
-    background-color: #0A1A2A;
-    color: white;
-}
-
-.btn-principal {
-    background-color: #0A1A2A;
-    color: white;
-} */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
 }
-/*::::::001-Contacto:::::::*/
-.container-contacto{
-    width: 100%;
+
+
+.container-contacto {
+    width: map-get($medidas , tamanio-total );
     margin-top: 80px;
 }
-.content-contacto{
-    width: 100%;
+
+.content-contacto {
+    width: map-get($medidas , tamanio-total );
     max-width: 1110px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap:70px;
+    grid-gap: 70px;
     color: #434343;
 }
-.content-contacto h2{
-    font-size: 40px;
-    margin-bottom: 25px;
+
+.content-contacto h2 {
+    font-size: map-get($medidas , 40 );
+    margin-bottom: map-get($medidas , 25 );
+    
 }
-.info-contacto p{
+
+.info-contacto p {
     line-height: 1.5;
     font-size: 17px;
     margin-bottom: 35px;
+    
 }
-.info-contacto a{
+
+.info-contacto a {
     text-decoration: none;
     color: #434343;
-    margin-bottom: 20px;
+    margin-bottom: map-get($medidas , 20);
     display: flex;
     align-items: center;
     font-size: 17px;
 }
-.info-contacto a i{
+
+.info-contacto a i {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: map-get($medidas ,40);
+    height: map-get($medidas ,40);
     text-align: center;
     line-height: 35px;
     border-radius: 50%;
@@ -58,8 +55,9 @@
     color: #096aed;
     margin-right: 15px;
 }
-.formulario .campo{
-    width: 100%;
+
+.formulario .campo {
+    width: map-get($medidas , tamanio-total );
     padding: 13px 15px;
     font-size: 16px;
     margin-bottom: 13px;
@@ -67,41 +65,63 @@
     border: 1px solid #dbdbdb;
     outline: 0px;
 }
-.formulario .box{
+
+.formulario .box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap:13px;
+    grid-gap: 13px;
 }
-.formulario textarea{
+
+.formulario textarea {
     max-height: 150px;
     min-height: 150px;
 }
-.formulario .boton{
+
+.formulario .boton {
     border: none;
     padding: 12px 15px;
-    font-size: 17px;
-    background: #096aed;
+    font-size: 18px;
+    background: #0d2033;
     border-radius: 3px;
-    color: #fff;
+    color: map-get($colores ,terciario);
     cursor: pointer;
     transition: all 300ms ease;
     outline: 0px;
     will-change: transform;
 }
-.formulario .boton:active{
+
+.formulario .botoon {
+    border: none;
+    padding: 12px 15px;
+    font-size: map-get($medidas ,18);
+    background: #BD1919;
+    border-radius: 3px;
+    color: map-get($colores ,terciario);
+    cursor: pointer;
+    transition: all 300ms ease;
+    outline: 0px;
+    will-change: transform;
+}
+
+
+
+.formulario .boton:active {
     transform: scale(0.95);
 }
-@media screen and (max-width:900px){
-    .content-contacto{
+
+@media screen and (max-width:900px) {
+    .content-contacto {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:20px;
+        grid-gap: 20px;
     }
-    .formulario .box{
+
+    .formulario .box {
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:0px;
+        grid-gap: 0px;
     }
-    .formulario textarea{
+
+    .formulario textarea {
         max-height: 120px;
         min-height: 120px;
     }

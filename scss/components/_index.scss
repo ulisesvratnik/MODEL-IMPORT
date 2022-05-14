@@ -10,6 +10,8 @@
     }
 }
 
+
+
 /* DESTACADOS */
 
 .tituloo {
@@ -32,7 +34,7 @@
     width: 350px;
     margin-top: map-get($medidas, 20);
     margin-bottom: map-get($medidas, 20);
-    margin-left: map-get($medidas, tamanio-total/2);
+    margin-left: map-get($medidas, 50);
     margin-right: map-get($medidas, 20);
 
 }
@@ -56,9 +58,9 @@
 
     p {
         text-align: center;
-        font-size: 24px;
+        font-size: map-get($tamanio-tipografia, titulos);
         color: map-get($colores, cuaternario);
-
+        font-family: 'Vollkorn', serif;
     }
 }
 
@@ -237,8 +239,8 @@
     }
 
     .estrellas {
-        height: map-get($medidas, tamanio-total/2);
-        width: map-get($medidas, tamanio-total/2);
+        height: 50px;
+        width: 50px;
     }
 }
 

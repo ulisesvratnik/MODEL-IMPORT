@@ -1,13 +1,13 @@
 /* MAPS */
 
-$colores:(
+$colores: (
     principal: #0d2033,
     secundario: white,
     terciario: #fff,
     cuaternario: black,
 );
 
-$tamanio-tipografia:(
+$tamanio-tipografia: (
     titulos: 24px,
     subtitulos: 22px,
     textos: 20px,
@@ -15,12 +15,13 @@ $tamanio-tipografia:(
     letra-chica: 12px,
 );
 
-$medidas:(
+$medidas: (
     tamanio-total: 100%,
-    tamanio-medio: tamanio-total/2, /* 50PX */
+    total: 100px,
+    50: 50px,
+    25: 25px ,
     45: 45px,
     40: 40px,
-    tamanio-cuarto: tamanio-medio/2, /* 25PX */
     20: 20px,
     18: 18px,
     10: 10px,
@@ -29,18 +30,22 @@ $medidas:(
 
 /* EXTEND */
 
-.flex-center{
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
-};
+}
 
-.flex{
+;
+
+.flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-};
+}
+
+;
 
 /* MIXIN */
 
@@ -49,5 +54,6 @@ $medidas:(
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
-};
+}
 
+;
