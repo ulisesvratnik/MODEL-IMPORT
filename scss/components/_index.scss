@@ -10,12 +10,10 @@
     }
 }
 
-
-
 /* DESTACADOS */
 
 .tituloo {
-    text-align: center;
+    @extend .center;
     font-size: 42px;
     width: map-get($medidas, tamanio-total);
 
@@ -57,7 +55,7 @@
     }
 
     p {
-        text-align: center;
+        @extend .center;
         font-size: map-get($tamanio-tipografia, titulos);
         color: map-get($colores, cuaternario);
         font-family: 'Vollkorn', serif;
@@ -85,14 +83,18 @@
 }
 
 .titulo3 {
-    text-align: center;
+    @extend .center;
     font-size: 2em;
 }
 
 /* GALERIA DE IMAGENES */
 
+.mainn{
+    font-family: 'Manrope', sans-serif;
+}
+
 .title {
-    text-align: center;
+    @extend .center;
     font-size: 3rem;
     padding: .8em 0 .4em;
     color: black;

@@ -13,8 +13,8 @@
 ul>li>a {
     color: map-get($colores, secundario);
     transition: all 300ms ease;
-    font-size: 18px;
-    font-family: 'Manrope', sans-serif;
+    font-size: map-get($tamanio-tipografia, titulos);
+    font-family: 'Vollkorn', serif;
 }
 
 
@@ -34,6 +34,10 @@ a {
     color: map-get($colores, cuaternario);
 
 }
+ul{
+    font-family: 'Vollkorn', serif;
+}
+
 
 
 
@@ -47,8 +51,6 @@ a {
 
     section {
         article {
-
-
             .olproductos {
                 padding: map-get($medidas, 5);
                 max-width: map-get($medidas, tamanio-total);

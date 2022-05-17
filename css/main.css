@@ -1,6 +1,13 @@
 /* MAPS */
 /* EXTEND */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+.center, .btn-wsp, .pie-pagina .grupo-1 .red-social a, .pie-pagina .grupo-2, .pie-pagina .text, .tituloo, .caja p, .titulo3, .title, .info-contacto a i {
+  text-align: center; }
+
+.flexx-center, .pie-pagina .hfooter, .pie-pagina .red-social, .pie-pagina .figura, .info-contacto a {
+  display: flex;
+  align-items: center; }
+
 .flex-center, .gallery__picture::before {
   display: flex;
   justify-content: center;
@@ -30,7 +37,6 @@
   background: #25d366;
   color: #fff;
   border-radius: 50px;
-  text-align: center;
   font-size: 35px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   z-index: 100;
@@ -89,28 +95,15 @@ article {
       color: #fff;
       margin-right: 10px;
       background-color: #0d2033;
-      text-align: center;
       transition: all 300ms ease; }
     .pie-pagina .grupo-1 .red-social a:hover {
       color: aqua; }
   .pie-pagina .grupo-2 {
     background-color: #0d2033;
     padding: 10px;
-    text-align: center;
     color: #fff; }
   .pie-pagina .grupo-2 small {
     font-size: 15px; }
-  .pie-pagina .text {
-    text-align: center; }
-  .pie-pagina .hfooter {
-    display: flex;
-    justify-content: center; }
-  .pie-pagina .red-social {
-    display: flex;
-    justify-content: center; }
-  .pie-pagina .figura {
-    display: flex;
-    justify-content: center; }
 
 @media (max-width: 952px) {
   .enlace {
@@ -147,8 +140,8 @@ article {
 ul > li > a {
   color: white;
   transition: all 300ms ease;
-  font-size: 18px;
-  font-family: 'Manrope', sans-serif; }
+  font-size: 24px;
+  font-family: 'Vollkorn', serif; }
 
 ul > li > a:hover {
   transform: scale(1);
@@ -164,6 +157,9 @@ ul > li > a:hover {
 a {
   text-decoration: none;
   color: black; }
+
+ul {
+  font-family: 'Vollkorn', serif; }
 
 /* MENU */
 .menu {
@@ -235,109 +231,9 @@ a {
   text-align: start;
   padding: 5px; }
 
-h5 {
-  font-size: 18px;
-  text-align: center; }
-
-.ptachado {
-  text-decoration: line-through;
-  padding-right: 10px;
-  margin-left: 100px;
-  color: black;
-  font-size: 20px; }
-
-.pnotachado {
-  color: black;
-  margin-right: 10px;
-  font-size: 20px; }
-
-.boton-d {
-  border: none;
-  padding: 5px 70px;
-  text-align: center;
-  font-size: 18px;
-  background: #0d2033;
-  border-radius: 3px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 300ms ease;
-  outline: 0px;
-  will-change: transform;
-  text-align: center; }
-
-@media (max-width: 1224px) {
-  .ptachado {
-    padding-right: 5px;
-    margin-left: 50px; }
-  .pnotachado {
-    margin-right: 5px; } }
-
-@media (max-width: 1200px) {
-  .boton-d {
-    padding: 5px 40px; }
-  .ptachado {
-    padding-right: 5px;
-    margin-left: 50px; }
-  .pnotachado {
-    margin-right: 5px; } }
-
-@media (max-width: 995px) {
-  .boton-d {
-    padding: 5px 20px; }
-  .ptachado {
-    padding-right: 5px;
-    margin-left: 30px; }
-  .pnotachado {
-    margin-right: 5px; } }
-
-@media (max-width: 991px) {
-  .boton-d {
-    padding: 5px 100px; } }
-
-@media (max-width: 789px) {
-  .ptachado {
-    padding-right: 5px;
-    margin-left: 10px; }
-  .pnotachado {
-    margin-right: 5px; } }
-
-@media (max-width: 767px) {
-  .ptachado {
-    padding-right: 10px;
-    margin-left: 20px; }
-  .pnotachado {
-    margin-right: 5px; } }
-
-@media (max-width: 575px) {
-  .boton-d {
-    padding: 5px 50px; }
-  .ptachado {
-    padding-right: 20px;
-    margin-left: 100px; }
-  .pnotachado {
-    margin-right: 25px;
-    font-size: 20px; } }
-
-@media (max-width: 496px) {
-  .boton-d {
-    padding: 5px 15px; }
-  .ptachado {
-    padding-right: 5px;
-    margin-left: 40px; }
-  .pnotachado {
-    margin-right: 5px; } }
-
-.boton-d {
-  padding: 5px 30px; }
-
-@media (max-width: 369px) {
-  .boton-d {
-    padding: 5px 20px; }
-  .ptachado {
-    padding-right: 5px;
-    margin-left: 5px; }
-  .pnotachado {
-    margin-right: 5px; } }
+.boton {
+  background-color: #0d2033;
+  color: white; }
 
 /* MENU */
 .Categorias-productos img {
@@ -346,7 +242,6 @@ h5 {
 
 /* DESTACADOS */
 .tituloo {
-  text-align: center;
   font-size: 42px;
   width: 100%; }
 
@@ -378,7 +273,6 @@ h5 {
     height: 350px;
     border-radius: 15px; }
   .caja p {
-    text-align: center;
     font-size: 24px;
     color: black;
     font-family: 'Vollkorn', serif; }
@@ -400,12 +294,13 @@ h5 {
   margin-right: auto; }
 
 .titulo3 {
-  text-align: center;
   font-size: 2em; }
 
 /* GALERIA DE IMAGENES */
+.mainn {
+  font-family: 'Manrope', sans-serif; }
+
 .title {
-  text-align: center;
   font-size: 3rem;
   padding: .8em 0 .4em;
   color: black; }
@@ -528,6 +423,12 @@ h5 {
     height: 45px;
     width: 45px; } }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; }
+
 .container-contacto {
   width: 100%;
   margin-top: 80px; }
@@ -554,15 +455,12 @@ h5 {
   text-decoration: none;
   color: #434343;
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
   font-size: 17px; }
 
 .info-contacto a i {
   display: inline-block;
   width: 40px;
   height: 40px;
-  text-align: center;
   line-height: 35px;
   border-radius: 50%;
   border: 2px solid #096aed;
@@ -589,21 +487,9 @@ h5 {
 
 .formulario .boton {
   border: none;
-  padding: 12px 56px;
-  font-size: 18px;
-  background: #0d2033;
-  border-radius: 3px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 300ms ease;
-  outline: 0px;
-  will-change: transform; }
-
-.formulario .botoon {
-  border: none;
-  padding: 12px 73px;
-  font-size: 18px;
-  background: #A20202;
+  padding: 12px 15px;
+  font-size: 17px;
+  background: #096aed;
   border-radius: 3px;
   color: #fff;
   cursor: pointer;
@@ -613,6 +499,37 @@ h5 {
 
 .formulario .boton:active {
   transform: scale(0.95); }
+
+.btn {
+  position: relative;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  background-color: #0d2033;
+  overflow: hidden;
+  transition: all 500ms ease;
+  border: 2px solid #0d2033;
+  margin-bottom: 40px;
+  z-index: 0;
+  font-weight: 700; }
+  .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: #0d2033;
+    transition: all 500ms ease;
+    z-index: -1; }
+  .btn--1::before {
+    width: 0;
+    height: 100%; }
+  .btn--1:hover {
+    color: white; }
+    .btn--1:hover::before {
+      width: 100%; }
 
 @media screen and (max-width: 900px) {
   .content-contacto {

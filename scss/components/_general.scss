@@ -1,8 +1,8 @@
 * {
     box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* WHATSAPP */
@@ -17,7 +17,7 @@
     background: #25d366;
     color: map-get($colores , terciario);
     border-radius: map-get($medidas , 50);
-    text-align: center;
+    @extend .center;
     font-size: 35px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
     z-index: 100;
@@ -90,13 +90,13 @@ article {
         .red-social a {
             display: inline-block;
             text-decoration: none;
-            width:  map-get($medidas, 45) ;
-            height:  map-get($medidas, 45) ;
-            line-height:  map-get($medidas, 45) ;
-            color: map-get($colores ,terciario);
-            margin-right:  map-get($medidas, 10);
+            width: map-get($medidas, 45);
+            height: map-get($medidas, 45);
+            line-height: map-get($medidas, 45);
+            color: map-get($colores , terciario);
+            margin-right: map-get($medidas, 10);
             background-color: #0d2033;
-            text-align: center;
+            @extend .center;
             transition: all 300ms ease;
         }
 
@@ -108,7 +108,7 @@ article {
     .grupo-2 {
         background-color: map-get($colores , principal);
         padding: map-get($medidas, 15) map-get($medidas, 10);
-        text-align: center;
+        @extend .center;
         color: map-get($colores, terciario);
 
     }
@@ -118,28 +118,23 @@ article {
 
     }
 
-    .text{
-        text-align: center;
+    .text {
+        @extend .center;
     }
 
     .hfooter {
-
-        display: flex;
-        justify-content: center;
+        @extend .flexx-center
     }
 
     .red-social {
-
-        display: flex;
-        justify-content: center;
+        @extend .flexx-center
     }
 
     .figura {
-        display: flex;
-        justify-content: center;
+        @extend .flexx-center
     }
 
-    
+
 }
 
 @media (max-width: 952px) {
@@ -180,7 +175,7 @@ article {
         justify-content: center;
     }
 
-   .text{
-       text-align: center;
-   }
+    .text {
+        text-align: center;
+    }
 }

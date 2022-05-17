@@ -30,6 +30,13 @@ $medidas: (
 
 /* EXTEND */
 
+.center{
+    text-align: center;
+}
+.flexx-center{
+    display: flex;
+    align-items: center;
+}
 .flex-center {
     display: flex;
     justify-content: center;
