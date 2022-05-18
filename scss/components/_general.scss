@@ -123,16 +123,16 @@ article {
     }
 
     .hfooter {
-        @extend .flexx-center
-    }
+        text-align: center;
+    };
 
     .red-social {
         @extend .flexx-center
-    }
+    };
 
     .figura {
         @extend .flexx-center
-    }
+    };
 
 
 }
