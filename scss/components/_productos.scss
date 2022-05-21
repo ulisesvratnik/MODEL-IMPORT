@@ -6,12 +6,12 @@
  .d-productos {
      @extend .center;
      font-size: map-get($tamanio-tipografia, textos);
- }
+ };
 
  .titulo-productos {
-     font-family: 'Vollkorn', serif;
- }
+    @extend .titulos 
+ };
 
  .texto-productos {
-    font-family: 'DM Sans', sans-serif;
- }
+    @extend .textos 
+ };

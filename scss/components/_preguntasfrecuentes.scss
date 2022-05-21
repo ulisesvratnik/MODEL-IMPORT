@@ -6,11 +6,11 @@
 }
 
 .titulo-preguntas{
-    font-family: 'Vollkorn', serif;
-}
+    @extend .titulos 
+};
 
 .texto-preguntas{
-    font-family: 'DM Sans', sans-serif;
+    @extend .textos 
 }
 
 .textorganizadoli {

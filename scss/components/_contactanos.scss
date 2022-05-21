@@ -36,7 +36,7 @@
     margin-bottom: map-get($medidas , 20);
     @extend .flexx-center;
     font-size: 17px;
-}
+};
 
 .info-contacto a i {
     display: inline-block;
@@ -48,7 +48,7 @@
     border: 2px solid #096aed;
     color: #096aed;
     margin-right: 15px;
-}
+};
 
 .formulario .campo {
     width: map-get($medidas , tamanio-total);
@@ -77,7 +77,7 @@
     text-transform: uppercase;
     color: map-get($colores , secundario);
     font-size: 18px;
-    background-color: #0D2033;
+    background-color: map-get($colores, principal);
     overflow: hidden;
     transition: all 500ms ease;
     border: 2px solid map-get($colores , principal);
@@ -86,20 +86,20 @@
     font-weight: 700;
 
     &:hover {
-        background: #0D2033;
-        box-shadow: 0 0 10px #0D2033, 0 0 40px #0D2033, 0 0 80px #0D2033;
+        background: map-get($colores, principal);
+        box-shadow: 0 0 10px map-get($colores, principal), 0 0 40px map-get($colores, principal), 0 0 80px map-get($colores, principal);
         transition-delay: 0s;
-        color: white;
+        color: map-get($colores, secundario);
     }
 }
 
 .titulo-contacto{
-    font-family: 'Vollkorn', serif;
-}
+    @extend .titulos 
+};
 
 .texto-contacto{
-    font-family: 'DM Sans', sans-serif;
-}
+    @extend .textos 
+};
 
 
 @media screen and (max-width:900px) {

@@ -2,7 +2,7 @@
 
 .logo {
     width: 105px;
-    height: 100px;
+    height: map-get($medidas, total);
 }
 
 .header {
@@ -13,19 +13,19 @@ ul>li>a {
     color: map-get($colores, secundario);
     transition: all 300ms ease;
     font-size: map-get($tamanio-tipografia, titulos);
-    font-family: 'Vollkorn', serif;
-}
+    @extend .titulos 
+};
 
 
 ul>li>a:hover {
     box-shadow: 0 0 10px #427AC4, 0 0 40px #427AC4, 0 0 80px #427AC4;
     transition-delay: 0s;
-    border-radius: 5px;
-}
+    border-radius:map-get($medidas, 5);
+};
 
 .imagen-portada {
     @include flexbox(column, center, center)
-}
+};
 
 a {
     text-decoration: none;
@@ -34,10 +34,17 @@ a {
 
 /* MENU */
 
+.bodyy{
+    background-image: url(/imagenes/img12.jpg);
+}
+
+.como-comprar{
+    @extend .titulos 
+};
 
 .menu {
     background: #f0f0f0;
-    padding: 40px map-get($medidas, 20);
+    padding: map-get($medidas, 40) map-get($medidas, 20);
 
     section {
         article {
@@ -53,18 +60,13 @@ a {
                     margin: map-get($medidas, 10);
                     height: map-get($medidas, tamanio-total);
                     width: map-get($medidas, tamanio-total);
-                    font-family: 'Vollkorn', serif;
+                    @extend .titulos 
 
-                }
+                };
             }
         }
     }
 }
-.bodyy{
-    background-image: url(/imagenes/img12.jpg);
-}
 
-.como-comprar{
-    font-family: 'Vollkorn', serif;
-}
+
     

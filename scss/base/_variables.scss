@@ -30,6 +30,14 @@ $medidas: (
 
 /* EXTEND */
 
+.textos{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.titulos{
+    font-family: 'Vollkorn', serif;
+}
+
 .center{
     text-align: center;
 }
@@ -43,16 +51,12 @@ $medidas: (
     align-items: center;
 }
 
-;
-
 .flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-;
 
 /* MIXIN */
 
