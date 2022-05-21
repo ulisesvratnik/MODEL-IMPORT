@@ -1,10 +1,17 @@
- .boton{
-     background-color: map-get($colores , principal );
-     color: map-get($colores , secundario );
+ .boton {
+     background-color: map-get($colores , principal);
+     color: map-get($colores , secundario);
  }
 
- .d-productos{
-     text-align: center;
-     font-size: 20px;
-    
-}
+ .d-productos {
+     @extend .center;
+     font-size: map-get($tamanio-tipografia, textos);
+ }
+
+ .titulo-productos {
+     font-family: 'Vollkorn', serif;
+ }
+
+ .texto-productos {
+    font-family: 'DM Sans', sans-serif;
+ }

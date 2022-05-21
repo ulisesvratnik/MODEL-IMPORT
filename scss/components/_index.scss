@@ -10,12 +10,18 @@
     }
 }
 
+.texto {
+    font-family: 'Vollkorn', serif;
+}
+
+
 /* DESTACADOS */
 
 .tituloo {
     @extend .center;
     font-size: 42px;
     width: map-get($medidas, tamanio-total);
+    font-family: 'Vollkorn', serif;
 
 }
 
@@ -89,6 +95,16 @@
 .titulo3 {
     @extend .center;
     font-size: 2em;
+    font-family: 'Vollkorn', serif;
+
+}
+
+.titulo4 {
+    font-family: 'Vollkorn', serif;
+}
+
+.textoo {
+    font-family: 'DM Sans', sans-serif
 }
 
 /* GALERIA DE IMAGENES */
@@ -96,8 +112,11 @@
 .title {
     @extend .center;
     font-size: 3rem;
-    padding:  .8em 0 .4em; ;
+    padding: .8em 0 .4em;
+    ;
     color: black;
+    font-family: 'Vollkorn', serif;
+
 }
 
 .gallery {

@@ -110,6 +110,7 @@ article {
         padding: map-get($medidas, 15) map-get($medidas, 10);
         @extend .center;
         color: map-get($colores, terciario);
+        font-family: 'Vollkorn', serif;
 
     }
 
@@ -120,14 +121,17 @@ article {
 
     .text {
         @extend .center;
+        font-family: 'Vollkorn', serif;
     };
 
     .hfooter {
         @extend .center;
+        font-family: 'Vollkorn', serif;
     };
 
     .hfooteer{
         @extend .center;
+        font-family: 'Vollkorn', serif;
     };
 
     .red-social {

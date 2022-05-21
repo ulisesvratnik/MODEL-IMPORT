@@ -3,22 +3,14 @@
     width: map-get($medidas, tamanio-total);
     background: #f0f0f0;
     padding: map-get($medidas, 40) map-get($medidas, 20);
+}
 
-    ol{
-       
-    }
+.titulo-preguntas{
+    font-family: 'Vollkorn', serif;
+}
 
-    p{
-       
-    }
-
-    li{
-        
-    }
-
-    h2 h3{
-        
-    }
+.texto-preguntas{
+    font-family: 'DM Sans', sans-serif;
 }
 
 .textorganizadoli {
@@ -64,10 +56,4 @@
     flex: map-get($medidas, tamanio-total);
     text-align: start;
     padding: map-get($medidas, 5);
-}
-
-.color-acord{
-    background-color: red;
-    color: white;
-
 }

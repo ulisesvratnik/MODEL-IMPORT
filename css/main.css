@@ -1,7 +1,6 @@
 /* MAPS */
 /* EXTEND */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-.center, .btn-wsp, .pie-pagina .grupo-1 .red-social a, .pie-pagina .grupo-2, .pie-pagina .text, .pie-pagina .hfooter, .pie-pagina .hfooteer, .pie-pagina .red-social, .pie-pagina .figura, .tituloo, .caja p, .titulo3, .title, .info-contacto a i {
+.center, .btn-wsp, .pie-pagina .grupo-1 .red-social a, .pie-pagina .grupo-2, .pie-pagina .text, .pie-pagina .hfooter, .pie-pagina .hfooteer, .pie-pagina .red-social, .pie-pagina .figura, .d-productos, .tituloo, .caja p, .titulo3, .title, .info-contacto a i {
   text-align: center; }
 
 .flexx-center, .info-contacto a {
@@ -100,9 +99,16 @@ article {
   .pie-pagina .grupo-2 {
     background-color: #0d2033;
     padding: 10px;
-    color: #fff; }
+    color: #fff;
+    font-family: 'Vollkorn', serif; }
   .pie-pagina .grupo-2 small {
     font-size: 15px; }
+  .pie-pagina .text {
+    font-family: 'Vollkorn', serif; }
+  .pie-pagina .hfooter {
+    font-family: 'Vollkorn', serif; }
+  .pie-pagina .hfooteer {
+    font-family: 'Vollkorn', serif; }
 
 @media (max-width: 952px) {
   .enlace {
@@ -139,7 +145,8 @@ article {
 ul > li > a {
   color: white;
   transition: all 300ms ease;
-  font-size: 24px; }
+  font-size: 24px;
+  font-family: 'Vollkorn', serif; }
 
 ul > li > a:hover {
   box-shadow: 0 0 10px #427AC4, 0 0 40px #427AC4, 0 0 80px #427AC4;
@@ -169,16 +176,26 @@ a {
       padding: 5px;
       margin: 10px;
       height: 100%;
-      width: 100%; }
+      width: 100%;
+      font-family: 'Vollkorn', serif; }
 
 .bodyy {
   background-image: url(/imagenes/img12.jpg); }
+
+.como-comprar {
+  font-family: 'Vollkorn', serif; }
 
 .main-preguntas {
   height: 100%;
   width: 100%;
   background: #f0f0f0;
   padding: 40px 20px; }
+
+.titulo-preguntas {
+  font-family: 'Vollkorn', serif; }
+
+.texto-preguntas {
+  font-family: 'DM Sans', sans-serif; }
 
 .textorganizadoli {
   display: list-item; }
@@ -219,27 +236,32 @@ a {
   text-align: start;
   padding: 5px; }
 
-.color-acord {
-  background-color: red;
-  color: white; }
-
 .boton {
   background-color: #0d2033;
   color: white; }
 
 .d-productos {
-  text-align: center;
   font-size: 20px; }
+
+.titulo-productos {
+  font-family: 'Vollkorn', serif; }
+
+.texto-productos {
+  font-family: 'DM Sans', sans-serif; }
 
 /* MENU */
 .Categorias-productos img {
   width: 100%;
   height: 100%; }
 
+.texto {
+  font-family: 'Vollkorn', serif; }
+
 /* DESTACADOS */
 .tituloo {
   font-size: 42px;
-  width: 100%; }
+  width: 100%;
+  font-family: 'Vollkorn', serif; }
 
 .wrapper {
   display: grid;
@@ -293,13 +315,21 @@ a {
   margin-right: auto; }
 
 .titulo3 {
-  font-size: 2em; }
+  font-size: 2em;
+  font-family: 'Vollkorn', serif; }
+
+.titulo4 {
+  font-family: 'Vollkorn', serif; }
+
+.textoo {
+  font-family: 'DM Sans', sans-serif; }
 
 /* GALERIA DE IMAGENES */
 .title {
   font-size: 3rem;
   padding: .8em 0 .4em;
-  color: black; }
+  color: black;
+  font-family: 'Vollkorn', serif; }
 
 .gallery {
   padding-bottom: 3em;
@@ -490,6 +520,12 @@ a {
     box-shadow: 0 0 10px #0D2033, 0 0 40px #0D2033, 0 0 80px #0D2033;
     transition-delay: 0s;
     color: white; }
+
+.titulo-contacto {
+  font-family: 'Vollkorn', serif; }
+
+.texto-contacto {
+  font-family: 'DM Sans', sans-serif; }
 
 @media screen and (max-width: 900px) {
   .content-contacto {

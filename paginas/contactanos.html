@@ -32,6 +32,13 @@
     <link rel="icon" type="image/x-icon" href="../imagenes/logonuevo.jpeg">
 
     <!-- TIPOGRAFIA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 
 </head>
 
@@ -60,13 +67,15 @@
                             <a class="nav-link active pr-3 mx-1" href="../paginas/comocomprar.html">Comprar</a>
                         </li>
                         <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle active pr-3 mx-1" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active pr-3 mx-1" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Productos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="../paginas/productos.html#Smartwach">Smartwach</a></li>
-                                <li><a class="dropdown-item" href="../paginas/productos.html#auriculares">Auriculares</a></li>
+                                <li><a class="dropdown-item" href="../paginas/productos.html#Smartwach">Smartwach</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="../paginas/productos.html#auriculares">Auriculares</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -86,10 +95,11 @@
         <div class="container-contacto">
             <div class="content-contacto">
                 <div class="info-contacto">
-                    <h2>Informacion</h2>
-                    <p>A la brevedad nuestros expertos se pondran en contacto para ayudarte a resolver todas tus dudas.
+                    <h2 class="titulo-contacto">Información</h2>
+                    <p class="texto-contacto">A la brevedad nuestros expertos se pondrán en contacto para ayudarte a
+                        resolver todas tus dudas.
                         ¡Estamos para ayudarte!</p>
-                    <div class="contacto">
+                    <div class="contacto titulo-contacto">
                         <a href="#">
                             <i class="fa fa-phone"></i>
                             <span>+54 011-23875205</span>
@@ -105,8 +115,8 @@
                     </div>
                 </div>
                 <div class="formulario">
-                    <h2>Formulario De Contacto</h2>
-                    <form action="#" class="form" id="form">
+                    <h2 class="titulo-contacto">Formulario De Contacto</h2>
+                    <form action="#" class="form texto-contacto" id="form">
                         <input type="text" name="name" placeholder="Nombre Completo" class="campo" required>
                         <div class="box">
                             <input type="text" name="email" placeholder="Email" class="campo" required>
@@ -115,9 +125,10 @@
                         <textarea name="message" id="mensaje" placeholder="Mensaje..." class="campo"></textarea>
                         <div>
 
-                             <button type="submit" id="button" class="btn btn--1">ENVIAR MENSAJE</button>
-                            <button type="reset" name="btnenviar" class="btn btn--1">RESTABLECER</button>
-                            
+                            <button type="submit" id="button" class="btn btn--1 titulo-contacto">ENVIAR MENSAJE</button>
+                            <button type="reset" name="btnenviar"
+                                class="btn btn--1 titulo-contacto">RESTABLECER</button>
+
                         </div>
                     </form>
                     <script type="text/javascript"
@@ -194,4 +205,5 @@
                 });
         });
 </script>
+
 </html>
