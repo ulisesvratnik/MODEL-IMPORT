@@ -5,19 +5,19 @@
     padding: map-get($medidas, 40) map-get($medidas, 20);
 
     ol{
-        font-family: 'Vollkorn', serif;
+       
     }
 
     p{
-        font-family: 'Vollkorn', serif;
+       
     }
 
     li{
-         font-family: 'Vollkorn', serif; 
+        
     }
 
     h2 h3{
-        font-family: 'Oswald', sans-serif;
+        
     }
 }
 
@@ -64,4 +64,10 @@
     flex: map-get($medidas, tamanio-total);
     text-align: start;
     padding: map-get($medidas, 5);
+}
+
+.color-acord{
+    background-color: red;
+    color: white;
+
 }

@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .container-contacto {
@@ -36,7 +35,7 @@
 .info-contacto a {
     text-decoration: none;
     color: #434343;
-    margin-bottom: map-get($medidas , 20 );
+    margin-bottom: map-get($medidas , 20);
     @extend .flexx-center;
     font-size: 17px;
 }
@@ -54,7 +53,7 @@
 }
 
 .formulario .campo {
-    width: map-get($medidas , tamanio-total );
+    width: map-get($medidas , tamanio-total);
     padding: 13px 15px;
     font-size: 16px;
     margin-bottom: 13px;
@@ -74,63 +73,28 @@
     min-height: 150px;
 }
 
-.formulario .boton {
-    border: none;
-    padding: 12px 15px;
-    font-size: 17px;
-    background: #096aed;
-    border-radius: 3px;
-    color: map-get($colores , terciario );
-    cursor: pointer;
-    transition: all 300ms ease;
-    outline: 0px;
-    will-change: transform;
-}
-
-.formulario .boton:active {
-    transform: scale(0.95);
-}
-
 .btn {
     position: relative;
     border-radius: 4px;
     text-transform: uppercase;
-    color: map-get($colores , secundario );
+    color: map-get($colores , secundario);
     font-size: 18px;
-    background-color: map-get($colores , principal);
+    background-color: #0D2033;
     overflow: hidden;
     transition: all 500ms ease;
-    border: 2px solid  map-get($colores , principal);
-    margin-bottom:  map-get($medidas , 40);
+    border: 2px solid map-get($colores , principal);
+    margin-bottom: map-get($medidas , 40);
     z-index: 0;
     font-weight: 700;
 
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        margin: auto;
-        background-color: #0d2033;
-        transition: all 500ms ease;
-        z-index: -1;
+    &:hover {
+        background: #0D2033;
+        box-shadow: 0 0 10px #0D2033, 0 0 40px #0D2033, 0 0 80px #0D2033;
+        transition-delay: 0s;
+        color: white;
     }
-
-    &--1::before {
-        width: 0;
-        height: map-get($medidas , tamanio-total);
-    }
-
-    &--1:hover {
-        color:  map-get($colores , secundario);
-
-        &::before {
-            width: map-get($medidas , tamanio-total);
-        }
-    }
-
 }
+
 
 @media screen and (max-width:900px) {
     .content-contacto {

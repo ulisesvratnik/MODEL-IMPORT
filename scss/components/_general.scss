@@ -84,7 +84,7 @@ article {
         .box p {
             color: #efefef;
             margin-bottom: map-get($medidas, 10);
-            font-family: 'Vollkorn', serif;
+           
         }
 
         .red-social a {
@@ -116,25 +116,27 @@ article {
     .grupo-2 small {
         font-size: 15px;
 
-    }
+    };
 
     .text {
         @extend .center;
-    }
+    };
 
     .hfooter {
-        text-align: center;
+        @extend .center;
+    };
+
+    .hfooteer{
+        @extend .center;
     };
 
     .red-social {
-        @extend .flexx-center
+        @extend .center;
     };
 
     .figura {
-        @extend .flexx-center
+        @extend .center;
     };
-
-
 }
 
 @media (max-width: 952px) {

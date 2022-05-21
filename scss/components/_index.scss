@@ -23,7 +23,7 @@
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-auto-rows: minmax(100px, auto);
-    background-color:  map-get($colores, secundario);
+    background-color: map-get($colores, secundario);
 
 }
 
@@ -58,16 +58,17 @@
         @extend .center;
         font-size: map-get($tamanio-tipografia, titulos);
         color: map-get($colores, cuaternario);
-        font-family: 'Vollkorn', serif;
+
     }
 }
 
 /* OPINIONES */
 
-.fa-start{
-width: 200px;
-height: 200px;
+.fa-start {
+    width: 200px;
+    height: 200px;
 }
+
 .opinion {
     border: 1px solid #9B9B9B;
     margin: map-get($medidas, 20);
@@ -92,14 +93,10 @@ height: 200px;
 
 /* GALERIA DE IMAGENES */
 
-.mainn{
-    font-family: 'Manrope', sans-serif;
-}
-
 .title {
     @extend .center;
     font-size: 3rem;
-    padding: .8em 0 .4em;
+    padding:  .8em 0 .4em; ;
     color: black;
 }
 
@@ -117,6 +114,8 @@ height: 200px;
     grid-auto-rows: 250px;
 }
 
+
+
 .gallery__picture {
     position: relative;
     cursor: pointer;
@@ -124,19 +123,11 @@ height: 200px;
 
 }
 
-.gallery__picture::before {
-    content: "TUKI";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f3a6;
-    transform: scale(0);
-    transition: transform .4s;
-    color: map-get($colores, terciario);
+.gallery__picture:hover {
+
+    transform: scale(1.2);
+    transition: transform .8s;
     @extend .flex-center;
-    font-size: 1.5rem;
 }
 
 .gallery__picture:hover::before {
@@ -179,6 +170,7 @@ height: 200px;
     width: map-get($medidas, tamanio-total);
     height: map-get($medidas, tamanio-total);
     object-fit: cover;
+    transition: 0.5;
 }
 
 @media (max-width: 1285px) {
