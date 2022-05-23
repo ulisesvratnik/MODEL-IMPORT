@@ -1,59 +1,63 @@
-  .main-preguntas {
-    height: map-get($medidas, tamanio-total);
-    width: map-get($medidas, tamanio-total);
-    background: #f0f0f0;
-    padding: map-get($medidas, 40) map-get($medidas, 20);
-}
+ /* PREGUNTAS FRECUENTES */
+ 
+ .main-preguntas {
+      height: map-get($medidas, tamanio-total);
+      width: map-get($medidas, tamanio-total);
+      background: #f0f0f0;
+      padding: map-get($medidas, 40) map-get($medidas, 20);
+  }
 
-.titulo-preguntas{
-    @extend .titulos 
-};
+  .titulo-preguntas {
+      @extend .titulos
+  }
 
-.texto-preguntas{
-    @extend .textos 
-}
+  ;
 
-.textorganizadoli {
-    display: list-item;
-} 
+  .texto-preguntas {
+      @extend .textos
+  }
 
-.tituloh2 {
-    height: map-get($medidas, tamanio-total);
-    width: map-get($medidas, tamanio-total);
-    text-align: start;
-    max-width: map-get($medidas, tamanio-total);
-    padding: map-get($medidas, 10);
-    margin:  map-get($medidas, 20);
-}
+  .textorganizadoli {
+      display: list-item;
+  }
 
-.tituloh3{
-    height: map-get($medidas, tamanio-total);
-    text-align: start;
-    max-width: 83%;
-    flex: 83%;
-    padding: map-get($medidas, 10);
-    margin: map-get($medidas, 10);
-}
+  .tituloh2 {
+      height: map-get($medidas, tamanio-total);
+      width: map-get($medidas, tamanio-total);
+      text-align: start;
+      max-width: map-get($medidas, tamanio-total);
+      padding: map-get($medidas, 10);
+      margin: map-get($medidas, 20);
+  }
 
-.texto-productos {
-    padding: map-get($medidas, 5);
-    margin: map-get($medidas, 10);
-    height: map-get($medidas, tamanio-total);
-    width: map-get($medidas, tamanio-total);
-}
+  .tituloh3 {
+      height: map-get($medidas, tamanio-total);
+      text-align: start;
+      max-width: 83%;
+      flex: 83%;
+      padding: map-get($medidas, 10);
+      margin: map-get($medidas, 10);
+  }
 
-.texto-organizadoproductos{
-    display: block;
-    list-style-type: 1em;
-    margin-block-start: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: map-get($medidas, 40) ;
-}
+  .texto-productos {
+      padding: map-get($medidas, 5);
+      margin: map-get($medidas, 10);
+      height: map-get($medidas, tamanio-total);
+      width: map-get($medidas, tamanio-total);
+  }
 
-.olproductos {
-    max-width: map-get($medidas, tamanio-total);
-    flex: map-get($medidas, tamanio-total);
-    text-align: start;
-    padding: map-get($medidas, 5);
-}
+  .texto-organizadoproductos {
+      display: block;
+      list-style-type: 1em;
+      margin-block-start: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: map-get($medidas, 40);
+  }
+
+  .olproductos {
+      max-width: map-get($medidas, tamanio-total);
+      flex: map-get($medidas, tamanio-total);
+      text-align: start;
+      padding: map-get($medidas, 5);
+  }

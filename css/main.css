@@ -180,6 +180,7 @@ a {
       height: 100%;
       width: 100%; }
 
+/* PREGUNTAS FRECUENTES */
 .main-preguntas {
   height: 100%;
   width: 100%;
@@ -225,6 +226,7 @@ a {
   text-align: start;
   padding: 5px; }
 
+/* PRODUCTOS */
 .boton {
   background-color: #0d2033;
   color: white; }
@@ -404,7 +406,7 @@ a {
     font-size: 1.5rem;
     padding: .8em .4em; }
   .gallery {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas: "img1 img1" "img1 img1" "img2 img3" "img4 img4" "img4 img4" "img5 img5" "img6 img6" "img7 img7" "img8 img8" "img8 img8"; }
   .gallery__picture::before {
     font-size: 1rem; }
@@ -412,11 +414,7 @@ a {
     height: 45px;
     width: 45px; } }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
+/* CONTACTANOS */
 .container-contacto {
   width: 100%;
   margin-top: 80px; }

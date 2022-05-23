@@ -13,19 +13,25 @@ ul>li>a {
     color: map-get($colores, secundario);
     transition: all 300ms ease;
     font-size: map-get($tamanio-tipografia, titulos);
-    @extend .titulos 
-};
+    @extend .titulos
+}
+
+;
 
 
 ul>li>a:hover {
     box-shadow: 0 0 10px #427AC4, 0 0 40px #427AC4, 0 0 80px #427AC4;
     transition-delay: 0s;
-    border-radius:map-get($medidas, 5);
-};
+    border-radius: map-get($medidas, 5);
+}
+
+;
 
 .imagen-portada {
     @include flexbox(column, center, center)
-};
+}
+
+;
 
 a {
     text-decoration: none;
@@ -35,9 +41,11 @@ a {
 /* MENU */
 
 
-.como-comprar{
-    @extend .titulos 
-};
+.como-comprar {
+    @extend .titulos
+}
+
+;
 
 .menu {
     background: #f0f0f0;
@@ -51,20 +59,18 @@ a {
                 flex: map-get($medidas, tamanio-total);
                 text-align: start;
                 font-size: 18px;
-                
+
 
                 .texto-productos {
                     padding: map-get($medidas, 5);
                     margin: map-get($medidas, 10);
                     height: map-get($medidas, tamanio-total);
                     width: map-get($medidas, tamanio-total);
-                    @extend .titulos 
-                    
-                };
+                    @extend .titulos
+                }
+
+                ;
             }
         }
     }
 }
-
-
-    

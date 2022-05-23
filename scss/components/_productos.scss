@@ -1,3 +1,5 @@
+ /* PRODUCTOS */
+ 
  .boton {
      background-color: map-get($colores , principal);
      color: map-get($colores , secundario);
@@ -6,12 +8,18 @@
  .d-productos {
      @extend .center;
      font-size: map-get($tamanio-tipografia, textos);
- };
+ }
+
+ ;
 
  .titulo-productos {
-    @extend .titulos 
- };
+     @extend .titulos
+ }
+
+ ;
 
  .texto-productos {
-    @extend .textos 
- };
+     @extend .textos
+ }
+
+ ;

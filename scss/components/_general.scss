@@ -155,16 +155,15 @@ article {
 
     ;
 
-     .figura {
-               @extend .center;
-    }; 
-
-    .mapa{
-
+    .figura {
+        @extend .center;
     }
 
-    
-};
+    ;
+
+}
+
+;
 
 @media (max-width: 952px) {
     .enlace {
@@ -201,7 +200,7 @@ article {
         justify-content: center;
     }
 
-    .mapa{
+    .mapa {
         display: flex;
         justify-content: center;
     }
@@ -209,5 +208,6 @@ article {
     .text {
         text-align: center;
     }
-};
+}
 
+;

@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* CONTACTANOS */
 
 .container-contacto {
     width: map-get($medidas , tamanio-total);
@@ -36,7 +32,9 @@
     margin-bottom: map-get($medidas , 20);
     @extend .flexx-center;
     font-size: 17px;
-};
+}
+
+;
 
 .info-contacto a i {
     display: inline-block;
@@ -48,7 +46,9 @@
     border: 2px solid #096aed;
     color: #096aed;
     margin-right: 15px;
-};
+}
+
+;
 
 .formulario .campo {
     width: map-get($medidas , tamanio-total);
@@ -93,13 +93,17 @@
     }
 }
 
-.titulo-contacto{
-    @extend .titulos 
-};
+.titulo-contacto {
+    @extend .titulos
+}
 
-.texto-contacto{
-    @extend .textos 
-};
+;
+
+.texto-contacto {
+    @extend .textos
+}
+
+;
 
 
 @media screen and (max-width:900px) {

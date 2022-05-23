@@ -11,8 +11,10 @@
 }
 
 .texto {
-    @extend .titulos 
-};
+    @extend .titulos
+}
+
+;
 
 
 /* DESTACADOS */
@@ -21,8 +23,10 @@
     @extend .center;
     font-size: 42px;
     width: map-get($medidas, tamanio-total);
-    @extend .titulos 
-};
+    @extend .titulos
+}
+
+;
 
 .wrapper {
     display: grid;
@@ -63,7 +67,9 @@
         @extend .center;
         font-size: map-get($tamanio-tipografia, titulos);
         color: map-get($colores, cuaternario);
-    };
+    }
+
+    ;
 }
 
 /* OPINIONES */
@@ -93,17 +99,22 @@
 .titulo3 {
     @extend .center;
     font-size: 2em;
-    @extend .titulos 
+    @extend .titulos
+}
 
-};
+;
 
 .titulo4 {
-    @extend .titulos 
-};
+    @extend .titulos
+}
+
+;
 
 .textoo {
-    @extend .textos 
-};
+    @extend .textos
+}
+
+;
 
 /* GALERIA DE IMAGENES */
 
@@ -112,8 +123,10 @@
     font-size: 3rem;
     padding: .8em 0 .4em;
     color: black;
-    @extend .titulos 
-};
+    @extend .titulos
+}
+
+;
 
 .gallery {
     padding-bottom: 3em;
@@ -143,7 +156,9 @@
     transform: scale(1.2);
     transition: transform .8s;
     @extend .flex-center;
-};
+}
+
+;
 
 .gallery__picture:hover::before {
     transform: scale(1) rotate(360deg);
@@ -192,7 +207,9 @@
     .estrellas {
         height: 55px;
         width: 55px;
-    };
+    }
+
+    ;
 }
 
 @media (max-width: 1135px) {
@@ -204,38 +221,50 @@
     .titulo3 {
         text-align: center;
         font-size: 1.5em;
-    };
+    }
+
+    ;
 }
 
 @media (max-width: 1021px) {
     .estrellas {
         height: map-get($medidas, 40);
         width: map-get($medidas, 40);
-    };
+    }
+
+    ;
 }
 
 @media (max-width: 952px) {
     .enlace {
         padding-left: map-get($medidas, 20);
-    };
+    }
+
+    ;
 
     nav ul li a {
         font-size: 16px;
-    };
+    }
+
+    ;
 }
 
 @media (max-width: 985px) {
     .estrellas {
         height: 35px;
         width: 35px;
-    };
+    }
+
+    ;
 }
 
 @media (max-width: 868px) {
     .estrellas {
         height: 34px;
         width: 34px;
-    };
+    }
+
+    ;
 }
 
 @media (max-width: 858px) {
@@ -244,26 +273,34 @@
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0;
-    };
+    }
+
+    ;
 
     .wrapper {
         display: block;
-    };
+    }
+
+    ;
 
     .estrellas {
-        height: 50px;
-        width: 50px;
-    };
+        height: map-get($medidas, 50);
+        width: map-get($medidas, 50);
+    }
+
+    ;
 }
 
 @media (max-width: 768px) {
     .title {
         font-size: 1.5rem;
         padding: .8em .4em;
-    };
+    }
+
+    ;
 
     .gallery {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
         grid-template-areas:
             "img1 img1"
             "img1 img1"
@@ -275,14 +312,20 @@
             "img7 img7"
             "img8 img8"
             "img8 img8";
-    };
+    }
+
+    ;
 
     .gallery__picture::before {
         font-size: 1rem;
-    };
+    }
+
+    ;
 
     .estrellas {
         height: map-get($medidas, 45);
         width: map-get($medidas, 45);
-    };
+    }
+
+    ;
 }
