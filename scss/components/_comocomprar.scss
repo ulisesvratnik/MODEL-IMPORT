@@ -34,9 +34,6 @@ a {
 
 /* MENU */
 
-.bodyy{
-    
-}
 
 .como-comprar{
     @extend .titulos 
@@ -53,6 +50,7 @@ a {
                 max-width: map-get($medidas, tamanio-total);
                 flex: map-get($medidas, tamanio-total);
                 text-align: start;
+                font-size: 18px;
                 
 
                 .texto-productos {
