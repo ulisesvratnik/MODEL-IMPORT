@@ -61,7 +61,7 @@ a {
                     height: map-get($medidas, tamanio-total);
                     width: map-get($medidas, tamanio-total);
                     @extend .titulos 
-
+                    
                 };
             }
         }
