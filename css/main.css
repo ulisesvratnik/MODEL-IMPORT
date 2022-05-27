@@ -309,7 +309,10 @@ a {
   padding-top: 1em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "img1 img1 img2 img3" "img1 img1 img4 img4" "img5 img5 img6 img7" "img5 img5 img8 img8";
+  grid-template-areas: "img1 img1 img2 img3"
+ "img1 img1 img4 img4"
+ "img5 img5 img6 img7"
+ "img5 img5 img8 img8";
   gap: .8em;
   grid-auto-rows: 250px; }
 
@@ -407,7 +410,16 @@ a {
     padding: .8em .4em; }
   .gallery {
     grid-template-columns: 1fr;
-    grid-template-areas: "img1 img1" "img1 img1" "img2 img3" "img4 img4" "img4 img4" "img5 img5" "img6 img6" "img7 img7" "img8 img8" "img8 img8"; }
+    grid-template-areas: "img1 img1"
+ "img1 img1"
+ "img2 img3"
+ "img4 img4"
+ "img4 img4"
+ "img5 img5"
+ "img6 img6"
+ "img7 img7"
+ "img8 img8"
+ "img8 img8"; }
   .gallery__picture::before {
     font-size: 1rem; }
   .estrellas {
@@ -476,7 +488,7 @@ a {
   border-radius: 4px;
   text-transform: uppercase;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #0d2033;
   overflow: hidden;
   transition: all 500ms ease;
